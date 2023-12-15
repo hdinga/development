@@ -1,0 +1,75 @@
+/*
+©2004-2019 TRIGGERCELLDESIGNS
+http://triggercell.com
+*/
+
+
+//SM (PHONES - 576PX OR GREATER)
+@media (min-width: 576px) { 
+    
+}
+
+//MD  (TABLETS - 768PX OR GREATER)
+@media (min-width: 768px) { 
+    
+}
+
+//LG (DESKTOP - 992PX OR GREATER)
+@media (min-width: 992px) { 
+
+}
+
+//XL (DESKTOP - 1080PX OR GREATER)
+@media screen and (min-width: 1080px) { 
+	
+}
+
+//SM (PHONES - 576PX OR LESS)
+@media (max-width: 576px) { 
+    #tMasthead .tc-header--lg {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+//MD  (tablets, 768PX OR LESS)
+@media (max-width: 768px) { 
+	#tMasthead .tc-masthead_header-content h3 {
+		font-size: 2rem;
+	}
+	
+    #tMasthead .tc-header--lg {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    .tc-footer_copyright {
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    #tFooter .tc-socialicon_wrapper {
+        margin-top: 0.5rem;
+        text-align: center !important;
+    }
+    
+    .tc-about_section2 .bg-diagonal {
+        top: -66rem;
+        left: -6rem;
+    }
+}
+
+//LG (DESKTOP - 992PX OR LESS)
+@media (max-width: 992px) {
+    .tc-header_navmenu ul {
+        display: none;
+    }
+    .burgermenu-btn {
+        display: block !important;
+    }
+    
+    .tc-about_section2 .tc-header--md {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+}
+
+

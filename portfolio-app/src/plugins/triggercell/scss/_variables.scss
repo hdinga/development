@@ -1,0 +1,81 @@
+
+/***-----------------------------------------------// COLOR LIBRARY **/
+:root {
+    /* COLOR-PRIMARY */
+    --tc-color-a1: #FF5252; /*primary*/
+    --tc-color-a2: #FF4343; 
+    --tc-color-a3: #EF2B2D;
+    
+    /* COLOR-SECONDARY */
+    --tc-color-b1: #2196F3;
+    --tc-color-b2: #90CAF9;
+    --tc-color-b3: #5CA4A9;
+    --tc-color-b4: #9EC1B8;
+    --tc-color-b5: #00BCD4;
+    --tc-color-b6: #80DEEA;
+    --tc-color-b7: #8BC34A;
+    --tc-color-b8: #AED581;
+    --tc-color-b9: #FFC107;
+    --tc-color-b10: #FFE082;
+    --tc-color-b11: #E91E63;
+    --tc-color-b12: #E4405F;
+    --tc-color-b13: #9C27B0;
+    --tc-color-b14: #CE93D8;
+    
+    /* COLOR-LIGHT */
+    --tc-color-c1: #FAFAFA;
+    --tc-color-c2: #EFEFEF;
+    --tc-color-c3: #F9F6EF;
+    --tc-color-c4: #F0F0E8;
+    --tc-color-c5: #DDDFD4;
+    --tc-color-c6: #CCCFB6;
+    
+    /* COLOR-DARK */
+    --tc-color-d1: #666666;
+    --tc-color-d2: #555555;
+    --tc-color-d3: #4A4A4A;
+    --tc-color-d4: #343A40;
+    --tc-color-d5: #292F36;
+    --tc-color-d6: #1B252D;
+    
+    
+    /* CSS COLOR CLASSES */
+    .tc-bgcolor-a1{background-color: var(--tc-color-a1);} /*ORANGE*/
+    .tc-bgcolor-b1{background-color: var(--tc-color-b1);} /*BLUE DARK*/
+    .tc-bgcolor-b2{background-color: var(--tc-color-b2);} /*BLUE LIGHT*/
+    .tc-bgcolor-b5{background-color: var(--tc-color-b5);} /*TEAL DARK*/
+    .tc-bgcolor-b6{background-color: var(--tc-color-b6);} /*TEAL LIGHT*/
+    .tc-bgcolor-b7{background-color: var(--tc-color-b7);} /*GREEN DARK*/
+    .tc-bgcolor-b8{background-color: var(--tc-color-b8);} /*GREEN LIGHT*/
+    .tc-bgcolor-b9{background-color: var(--tc-color-b9);} /*YELLOW DARK*/
+    .tc-bgcolor-b10{background-color: var(--tc-color-b10);} /*YELLOW DARK*/
+    .tc-bgcolor-c2{background-color: var(--tc-color-c2);} /*LIGHT*/
+    .tc-bgcolor-c6{background-color: var(--tc-color-c6);} /*LIGHT*/
+    .tc-bgcolor-d1{background-color: var(--tc-color-d1);} /*DARK1*/
+    
+    .tc-bggradient-a1{background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);}
+    
+    /* FONT */
+	--text-sm: 90%;
+	--text-md: 1rem;
+	--text-lg: 2rem;
+
+    .text-sm { font-size: var(--text-sm);}
+    .text-md { font-size: var(--text-md);}
+    .text-lg { font-size: var(--text-lg);}
+    
+    //-- DROPSHADOW
+    --tc-box-shadow: 0 2px 2px #f3f3f3;
+
+    .tc-box-shadow { box-shadow: var(--tc-box-shadow);}
+
+    //-- SPACING
+    --tc-span-sm: 0.5rem;
+    --tc-span-md: 1.3rem;
+    --tc-span-lg: 2.0rem;
+}
+
+/*
+
+
+*/

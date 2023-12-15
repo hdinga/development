@@ -1,0 +1,293 @@
+/***
+
+///TRIGGERCELLDESIGNS 2005-2015
+***/
+
+
+body {
+    margin: 0px;
+}
+
+#container {
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #c2c2c2;
+    background-color: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+
+#banner {
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+/**  **/
+#stageTexture {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2000px;
+    height: 2000px;
+    opacity: 1;
+    background: url('images/imgTexture.png') no-repeat;
+    z-index: 0;
+}
+
+/**  **/
+#stageCurtain {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    opacity: 1;
+    background-color: #fbfbfb;
+    z-index: 100;
+}
+
+/**  **/
+#stageSeparator {
+    position: absolute;
+    left: 959px;
+    top: 131px;
+    width: 3px;
+    height: 780px;
+    opacity: 1;
+    background: url('images/imgSeparator.png') no-repeat;
+    z-index: 1;
+}
+
+
+/************** QUAD 1 **/
+
+/**  **/
+#quad1 {
+    position: absolute;
+    left: 57px;
+    top: 20px;
+    width: 886px;
+    height: 578px;
+    opacity: 1;
+    background: url('images/quad1.png') no-repeat;
+    z-index: 1;
+}
+
+/**  **/
+#quad1a {
+    position: absolute;
+    left: 57px;
+    top: 29px;
+    width: 882px;
+    height: 626px;
+    opacity: 1;
+    background: url('images/quad1a.png') no-repeat;
+    z-index: 1;
+}
+
+/************** QUAD 2 **/
+
+/**  **/
+#quad2 {
+    position: absolute;
+    left: 57px;
+    top: 658px;
+    width: 852px;
+    height: 358px;
+    opacity: 1;
+    background: url('images/quad2.png') no-repeat;
+    z-index: 1;
+}
+
+/************** QUAD 3 **/
+
+/**  **/
+#quad3 {
+    position: absolute;
+    left: 963px;
+    top: 0px;
+    width: 957px;
+    height: 549px;
+    opacity: 1;
+    background: url('images/quad3.png') no-repeat;
+    z-index: 1;
+}
+
+/**  **/
+#flatplate {
+    position: absolute;
+    left: 1010px;
+    top: 511px;
+    width: 861px;
+    height: 785px;
+    opacity: 1;
+    z-index: 1;
+}
+
+/**  **/
+#plate1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 861px;
+    height: 785px;
+    opacity: 1;
+    background: url('images/flatplate.png') no-repeat;
+    z-index: 1;
+}
+
+/**  **/
+#plate2 {
+    position: absolute;
+    left: 120px;
+    top: 40px;
+    width: 700px;
+    height: 716px;
+    opacity: 1;
+    background: url('images/plate2.png') no-repeat;
+    z-index: 2;
+}
+
+/**  **/
+#txt1 {
+    position: absolute;
+    left: 1089px;
+    top: 135px;
+    width: 663px;
+    height: 202px;
+    opacity: 1;
+    background: url('images/txt1.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txt2 {
+    position: absolute;
+    left: 1167px;
+    top: 650px;
+    width: 536px;
+    height: 187px;
+    opacity: 1;
+    background: url('images/txt2.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txt3 {
+    position: absolute;
+    left: 1131px;
+    top: 876px;
+    width: 587px;
+    height: 27px;
+    opacity: 1;
+    background: url('images/txt3.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtCopyright1 {
+    position: absolute;
+    left: 57px;
+    top: 1040px;
+    width: 521px;
+    height: 13px;
+    opacity: 1;
+    background: url('images/txtCopyright1.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtCopyright2 {
+    position: absolute;
+    left: 57px;
+    top: 1040px;
+    width: 521px;
+    height: 21px;
+    opacity: 1;
+    background: url('images/txtCopyright2.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtDisclaimer {
+    position: absolute;
+    left: 1149px;
+    top: 1012px;
+    width: 554px;
+    height: 14px;
+    opacity: 1;
+    background: url('images/txtDisclaimer.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#sandwich_top {
+    position: absolute;
+    left: 1032px;
+    top: 322px;
+    width: 786px;
+    height: 160px;
+    opacity: 1;
+    background: url('images/sandwich-top.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#sandwich_mid1 {
+    position: absolute;
+    left: 989px;
+    top: 386px;
+    width: 855px;
+    height: 111px;
+    opacity: 1;
+    background: url('images/sandwich-mid.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#sandwich_mid2 {
+    position: absolute;
+    left: 989px;
+    top: 412px;
+    width: 855px;
+    height: 111px;
+    opacity: 1;
+    background: url('images/sandwich-mid.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#sandwich_base {
+    position: absolute;
+    left: 992px;
+    top: 458px;
+    width: 849px;
+    height: 170px;
+    opacity: 1;
+    background: url('images/sandwich-base.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#smoke {
+    position: absolute;
+    left: 1075px;
+    top: 370px;
+    width: 700px;
+    height: 200px;
+    opacity: 1;
+    background: url('images/smoke.png') no-repeat 0px 0px;
+    z-index: 50;
+}

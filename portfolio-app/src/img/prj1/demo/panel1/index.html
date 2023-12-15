@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+
+<script type="text/javascript">
+    var clickTag = "https://subway.com/";  
+    function checkGreensockReady(){
+        if ( window.TimelineMax ){
+            //console.log('greensockready');
+            init();
+           
+        }else{
+            setTimeout( checkGreensockReady, 50 );
+        }
+    }
+    window.onload = checkGreensockReady;
+</script>
+    
+<title>Subway Menu | Panel 1</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="ad" onclick="window.open(window.clickTag)">
+            <div id="banner" style="visibility: visible;">
+                
+                <div id="stageCurtain"></div>
+                <div id="f0_txtHeader1"></div>
+                <div id="f0_img1"></div>
+                <div id="f0_img2"></div>
+                <div id="f0_img3"></div>
+                <div id="f0_img4"></div>
+                
+                <!-- FRAME1 -->
+                <div id="f1_txtHeader1"></div>
+                <div id="f1_txt1"></div>
+                
+                <div id="f1_img1"></div>
+                <div id="f1_img2"></div>
+                <div id="f1_img3"></div>
+                <div id="f1_img4a"></div>
+                <div id="f1_img4b"></div>
+                
+                <!-- FRAME2 -->
+                <div id="f2_txtHeader1"></div>
+                <div id="f2_txtHeader2"></div>
+                <div id="f2_txt1"></div>
+                <div id="f2_txt2"></div>
+                
+                <div id="f2_img1"></div>
+                <div id="f2_img2"></div>
+                <div id="f2_img3"></div>
+                
+                <!-- FRAME3 -->
+                <div id="f3_txtHeader1"></div>
+                <div id="f3_txt1"></div>
+                
+                <div id="f3_img1"></div>
+                <div id="f3_img2"></div>
+                <div id="f3_img3"></div>
+                <div id="f3_img4a"></div>
+                <div id="f3_img4b"></div>
+                <div id="f3_img5"></div>
+                <div id="f3_img6a"></div>
+                <div id="f3_img6b"></div>
+                <div id="f3_img7a"></div>
+                <div id="f3_img7b"></div>
+                <div id="f3_img8"></div>
+                <div id="f3_img9a"></div>
+                <div id="f3_img9b"></div>
+                <div id="f3_img9c"></div>
+                <div id="f3_img9d"></div>
+                <div id="f3_img9e"></div>
+                
+                <!-- FRAME4 -->
+                <div id="f4_txtHeader1"></div>
+                
+                <div id="f4_img1"></div>
+                <div id="f4_img2"></div>
+                <div id="f4_img3"></div>
+                <div id="f4_img4a"></div>
+                <!--<div id="f4_img4b"></div>-->
+                <div id="f4_img4b1"></div>
+                <div id="f4_img4b2"></div>
+                <div id="f4_img4b3"></div>
+                <div id="f4_img4b4"></div>
+                <div id="f4_img5"></div>
+                <div id="f4_img6"></div>
+                <div id="f4_img7"></div>
+                <div id="f4_img7a"></div>
+                <div id="f4_img7b"></div>
+                
+                <div id="f4_imgTxt1"></div>
+                <div id="f4_imgTxt2"></div>
+                <div id="f4_imgTxt3"></div>
+                <div id="f4_imgTxt4"></div>
+                <div id="f4_imgTxt5"></div>
+                <div id="f4_imgTxt6"></div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

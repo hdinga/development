@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+
+<script type="text/javascript">
+    var clickTag = "https://subway.com/";  
+    function checkGreensockReady(){
+        if ( window.TimelineMax ){
+            //console.log('greensockready');
+            init();
+           
+        }else{
+            setTimeout( checkGreensockReady, 50 );
+        }
+    }
+    window.onload = checkGreensockReady;
+</script>
+    
+<title>Subway Menu | Panel 5</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="ad" onclick="window.open(window.clickTag)">
+            <div id="banner" style="visibility: visible;">
+                
+                <!-- GENERAL -->
+                <div id="stageCurtain"></div>
+                <div id="stageTexture"></div>
+                
+                <div id="quad1"></div>
+                <div id="quad2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

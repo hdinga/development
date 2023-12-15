@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+		<meta charset="UTF-8">
+		<meta name="ad.size" content="width=728, height=90" />
+
+		<!--/// RICH MEDIA BEGINS -->
+		
+		<!-- DOUBLECLICK ENABLER -->
+		<!-- <script src="//s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var richmedia = true;
+			
+			//DOUBLECLICK INITIALIZE
+			if (Enabler.isInitialized()) {
+				StudioReady();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.INIT, StudioReady);
+			}
+			//DOUBLECLICK ENABLER READY
+			function StudioReady(){
+				if (Enabler.isPageLoaded()) {
+					init();
+				} else {
+					Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, init);
+				} 
+			}
+			
+		</script>-->
+		<!-- RICH MEDIA ENDS ///-->
+		
+		<!--/// STANDARD MEDIA BEGINS -->
+		<!-- --><script type="text/javascript">
+			var richmedia = false;
+			var clickTag = "https://www.goaheadtours.com/";
+			
+			//CHECK GREENSOCK READY
+			function checkGreensockReady() {
+				if (window.TweenLite && window.CSSPlugin) {
+					//console.log('greensockready');
+					
+					//CLICKTAG
+					document.getElementById('btn').addEventListener('click', function() {
+						window.open(window.clickTag);
+					});
+					
+					//LAUNCH JS
+					init();
+				} else {
+					setTimeout(checkGreensockReady, 50);
+				}
+			}
+			
+			//LOAD GREENSOCK CHECK
+			window.onload = checkGreensockReady;
+		</script><!-- -->
+		<!-- STANDARD MEDIA ENDS ///--->
+		
+		<link rel="stylesheet" type="text/css" href="src/style.css">
+		
+		<script type="text/javascript" src="src/gsap/TweenLite.min.js"></script>
+		<script type="text/javascript" src="src/gsap/EasePack.min.js"></script>
+		<script type="text/javascript" src="src/gsap/CSSPlugin.min.js"></script>
+		<script type="text/javascript" src="src/script.js"></script>
+		
+		<title>Airfare Sale '19</title>
+    </head>
+
+    <body>
+        <div id="container" style="visibility: hidden;">
+        	<div id="btn"></div>
+			<div id="curtain"></div>
+			
+			<div id="lockup">
+				<div id="lockup1a"></div>
+				<div id="lockup1b"></div>
+			</div>
+			<div id="lockup2"></div>
+			<div id="txt1a"></div>
+			<div id="txt1b"></div>
+			<div id="txt2"></div>
+			<div id="plane"></div>
+			<div id="cloud1"></div>
+			<div id="cloud2"></div>
+			<div id="cloud3"></div>
+			<div id="cloud4"></div>
+			<div id="cta">
+				<div id="btn_shimmer"></div>
+			</div>
+			<div id="logo_gat"></div>
+			<div id="logo_txt1"></div>
+			<div id="logo_txt2"></div>
+			<div id="logo_box1"></div>
+            <div id="logo_box2"></div>
+			<div id="bground">
+				<!--<video id="bgVideo" muted poster="">
+					<source src="src/imgs/vid.mp4" type="video/mp4">
+					<!--<source src="src/imgs/vid.ogg" type="video/ogg">
+					<source src="src/imgs/vid.webm" type="video/webm">-->
+				<!--</video>-->
+			</div>
+        </div>
+    </body>
+</html>

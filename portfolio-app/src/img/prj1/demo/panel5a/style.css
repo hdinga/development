@@ -1,0 +1,83 @@
+/***
+
+///TRIGGERCELLDESIGNS 2005-2015
+***/
+
+
+body {
+    margin: 0px;
+}
+
+#container {
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #c2c2c2;
+    background-color: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+
+#banner {
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+/**  **/
+#stageTexture {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2000px;
+    height: 2000px;
+    opacity: 1;
+    background: url('images/imgTexture.png') no-repeat;
+    z-index: 0;
+}
+
+/**  **/
+#stageCurtain {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    opacity: 1;
+    background-color: #fbfbfb;
+    z-index: 100;
+}
+
+/**  **/
+#quad1 {
+    position: absolute;
+    left: 52px;
+    top: 72px;
+    width: 1050px;
+    height: 947px;
+    opacity: 1;
+    background: url('images/quad1.png') no-repeat;
+    z-index: 1;
+}
+
+/**  **/
+#quad2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 800px;
+    height: 1111px;
+    opacity: 1;
+    background: url('images/quad2.gif') no-repeat;
+    z-index: 1;
+}

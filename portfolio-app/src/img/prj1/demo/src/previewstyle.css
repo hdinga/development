@@ -1,0 +1,33 @@
+/***
+
+///TRIGGERCELLDESIGNS 2005-2015
+***/
+
+
+
+.footer-text {
+    color: darkgray
+}
+
+.panelblock {
+    float: left;
+    margin: 0.0625em;
+    display: inline-block;
+}
+
+.container {
+   width: 9612px;
+}
+
+#footerblock{
+    font-size: 25px;
+    padding: 20px 5px;
+}
+
+#ipanel {
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    scrolling: none;
+    border: none;
+}

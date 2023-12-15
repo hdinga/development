@@ -1,0 +1,73 @@
+/*
+©2004-2024 TRIGGERCELLDESIGNS
+https://triggercell.com
+*/
+
+/***--------------------------------------------------------------------------------// IMPORTS **/
+@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"; 
+@import "_variables.css";
+@import "colors.css";
+@import "components.css";
+@import "animation";
+@import "mediaqueries.css";
+
+
+// FONT
+.tc-text-sm { font-size: var(--tc-text-sm);}
+.tc-text-md { font-size: var(--tc-text-lg);}
+.tc-text-lg { font-size: var(--tc-text-lg);}
+.tc-text-bold { font-weight: 500;}
+.tc-text-italic { font-style: italic;}
+
+// BOX SHADOW
+.tc-box-shadow { box-shadow: var(--tc-box-shadow);}
+
+// DEFAULTS
+html, body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: var(--tc-text-md);
+}
+
+//-- LINKS
+a {
+  text-decoration: none;
+  color: var(--tc-color-tl-md);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// DISABLED
+.disabled {
+  color: var(--tc-color-gy-lt);
+  pointer-events: none !important;
+}
+
+
+
+/***--------------------------------------------------------------------------------// COMMENTS (Tests and comments go here) **/
+
+
+/*
+section-name_child-name--modifier
+
+- Custom CSS classes should be added *after Bootstrap classes
+
+Z-INDEX 
+1-10 -- BACKGROUND
+11-20 -- BACKGROUND
+21-30 -- SECTIONS
+31-40 -- COPY, IMAGES, CONTENT
+41-50 -- MENU, BUTTONS, FOOTER
+51-60 -- ALERTS
+61-70 -- 
+71-80 -- PRELOADER
+81-90 -- TRANSITION OVERLAYS
+91-100 -- 
+
+**/

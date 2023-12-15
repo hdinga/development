@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+
+<script type="text/javascript">
+    var clickTag = "https://subway.com/";  
+    function checkGreensockReady(){
+        if ( window.TimelineMax ){
+            //console.log('greensockready');
+            init();
+           
+        }else{
+            setTimeout( checkGreensockReady, 50 );
+        }
+    }
+    window.onload = checkGreensockReady;
+</script>
+    
+<title>Subway Menu | Panel 3</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="ad" onclick="window.open(window.clickTag)">
+            <div id="banner" style="visibility: visible;">
+                
+                <!-- GENERAL -->
+                <div id="stageCurtain"></div>
+                <div id="stageTexture"></div>
+                <div id="stageSeparator"></div>
+                <div id="txtDisclaimer"></div>
+                <div id="imgLabel"></div>
+                
+                <!-- LEFT -->
+                <div id="f1_imgSub1"></div>
+                <div id="f1_imgSub2"></div>
+                <div id="f1_imgSub3"></div>
+                
+                <div id="f1_txtHeader"></div>
+                <div id="f1_txtGroup1"></div>
+                <div id="f1_txtGroup2">
+                    <div id="f1_txtGroup2_txt0"></div>
+                    <div id="f1_txtGroup2_txt1"></div>
+                    <div id="f1_txtGroup2_txt2"></div>
+                    <div id="f1_txtGroup2_txt3"></div>
+                </div>
+                <div id="f1_txtGroup3"></div>
+                
+                <!-- RIGHT -->
+                <div id="f2_imgSub1"></div>
+                <div id="f2_imgSub2"></div>
+                <div id="f2_imgSub3"></div>
+                
+                <div id="f2_txtHeader"></div>
+                <div id="f2_txtGroup1"></div>
+                <div id="f2_txtGroup2">
+                    <div id="f2_txtGroup2_txt0"></div>
+                    <div id="f2_txtGroup2_txt1"></div>
+                    <div id="f2_txtGroup2_txt2"></div>
+                </div>
+                <div id="f2_txtGroup3">
+                    <div id="f2_txtGroup3_txt0"></div>
+                    <div id="f2_txtGroup3_txt1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
