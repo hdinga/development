@@ -1,0 +1,196 @@
+/***
+
+REGIONAL_B ONLY - 160x600
+///TRIGGERCELLDESIGNS 2005-2018
+***/
+
+/** VARIABLES **/
+$brand1: #46A032;
+$brand2: #FFFFFF;
+
+
+/** **/
+body {
+    margin: 0px;
+}
+
+/** **/
+#container {
+    left: 0px;
+    top: 0px;
+    width: 160px;
+    height: 600px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #959595;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+
+/** **/
+#curtain {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 160px;
+    height: 600px;
+    display: block;
+    opacity: 1;
+    background-color: #FFFFFF;
+    z-index: 99;
+}
+
+/** **/
+#btn {
+	position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+  	height: 100%;
+	cursor: pointer;
+    display: block;
+    opacity: 0;
+    background-color: #FFFFFF;
+    z-index: 100;
+}
+
+/** **/
+#btn_shimmer {
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    width: 19px;
+    height: 45px;
+    opacity: 1;
+    background: url('imgs/btn-shimmer.png') no-repeat;
+    z-index: 100;
+}
+
+/** 
+#lockup {
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    width: 150px;
+    height: 70px;
+    opacity: 1;
+    background: url('imgs/lockup.png') no-repeat;
+    z-index: 10;
+}*/
+
+/** **/
+#txt1 {
+    position: absolute;
+    left: 12px;
+    top: 31px;
+    width: 136px;
+    height: 126px;
+    opacity: 1;
+    background: url('imgs/txt1.png') no-repeat;
+    z-index: 10;
+}
+
+/** **/
+#txt2 {
+    position: absolute;
+    left: 5px;
+    top: 220px;
+    width: 150px;
+    height: 73px;
+    opacity: 1;
+    background: url('imgs/txt2.png') no-repeat;
+    z-index: 10;
+}
+
+/** **/
+#cta {
+    position: absolute;
+    left: 6px;
+    top: 415px;
+    width: 145px;
+    height: 40px;
+    opacity: 1;
+    background: url('imgs/cta.svg') no-repeat;
+    z-index: 95;
+}
+
+
+/**************************************************** GAT BRANDING **/
+
+/** **/
+#logo_gat {
+    position: absolute;
+    left: 24px;
+    top: 555px;
+    width: 110px;
+    height: 17px;
+    opacity: 1;
+    background: url('imgs/logo-gat.png') no-repeat;
+    z-index: 95;
+}
+
+/** **/
+#logo_txt1 {
+    position: absolute;
+    left: 24px;
+    top: 507px;
+    width: 112px;
+    height: 27px;
+    opacity: 1;
+    background: url('imgs/logo-txt1.png') no-repeat;
+    z-index: 95;
+}
+
+/** **/
+#logo_txt2 {
+    position: absolute;
+    left: 17px;
+    top: 579px;
+    width: 127px;
+    height: 14px; 
+    opacity: 1;
+    background: url('imgs/logo-txt2.png') no-repeat;
+    z-index: 95;
+}
+
+/** **/
+#logo_box1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 160px;
+    height: 110px;
+    display: block;
+    opacity: 1;
+    background-color: $brand1;
+    z-index: 90;
+}
+
+/** **/
+#logo_box2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 160px;
+    height: 25px;
+    display: block;
+    opacity: 1;
+    background-color: $brand2;
+    z-index: 91;
+}
+
+/** **/
+#bground {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 180px;
+    height: 600px;
+    opacity: 1;
+    background: url('imgs/bground.jpg') no-repeat;
+    z-index: 0;
+}

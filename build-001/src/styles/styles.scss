@@ -1,0 +1,101 @@
+/*
+©2004-2024 TRIGGERCELLDESIGNS
+https://triggercell.com
+*/
+
+/***--------------------------------------------------------------------------------// IMPORTS **/
+@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css";
+@import "_variables";
+@import "colors";
+@import "components";
+@import "animation";
+@import "overrides";
+@import "mediaqueries";
+
+//-- DEFAULTS
+html,
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: var(--tc-text-md);
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--tc-color-red-md);
+  }
+}
+
+// PAGE SELECTION
+::selection {
+  color: #FFF;
+  background: var(--tc-color-red-md);
+}
+
+// SCROLLBAR
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--tc-color-red-md);
+
+  &:hover {
+    cursor: grab;;
+    background-color: var(--tc-color-red-md);;
+  }
+}
+::-webkit-scrollbar-track {
+  background-color: var(--tc-color-grey-lt);
+}
+
+// DISABLED
+.disabled {
+  opacity: 0.5;
+  pointer-events: none !important;
+}
+
+// FONT
+.tc-text-sm { font-size: var(--tc-text-sm); }
+.tc-text-md { font-size: var(--tc-text-lg); }
+.tc-text-lg { font-size: var(--tc-text-lg); }
+.tc-text-bold { font-weight: 500; }
+.tc-text-italic { font-style: italic; }
+
+// BOX SHADOW
+.tc-box-shadow { box-shadow: var(--tc-box-shadow); }
+
+// NO GUTTER BETWEEN COLS
+.no-gutter > [class*=col-] {
+  padding: 0;
+  margin: 0;
+}
+
+/***--------------------------------------------------------------------------------// COMMENTS (Tests and comments go here) **/
+
+/*
+section-name_child-name--modifier
+
+- Custom CSS classes should be added *after Bootstrap classes
+
+Z-INDEX 
+0-9   -- BACKGROUND I
+10-19 -- WRAPPER, CONTAINER
+20-29 -- SECTIONS, FOOTER, MASTHEAD
+30-39 -- COPY, IMAGES, CONTENT
+40-49 -- NAV, MENU, BUTTONS, 
+50-59 -- MODALS
+60-69 -- ALERTS
+70-79 -- PRELOADER
+80-89 -- TRANSITION OVERLAYS
+90-99 -- NOSCRIPTS
+100   -- (RESERVED)
+**/

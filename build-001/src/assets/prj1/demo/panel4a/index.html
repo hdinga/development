@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+
+<script type="text/javascript">
+    var clickTag = "https://subway.com/";  
+    function checkGreensockReady(){
+        if ( window.TimelineMax ){
+            //console.log('greensockready');
+            init();
+           
+        }else{
+            setTimeout( checkGreensockReady, 50 );
+        }
+    }
+    window.onload = checkGreensockReady;
+</script>
+    
+<title>Subway Menu | Panel 4</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="ad" onclick="window.open(window.clickTag)">
+            <div id="banner" style="visibility: visible;">
+                
+                <!-- GENERAL -->
+                <div id="stageCurtain"></div>
+                <div id="stageTexture"></div>
+                <div id="stageSeparator"></div>
+                
+                <!-- QUAD 1 -->
+                <div id="quad1"></div>
+                <div id="quad1a"></div>
+                
+                <!-- QUAD 2 -->
+                <div id="quad2"></div>
+                <div id="txtCopyright1"></div>
+                <div id="txtCopyright2"></div>
+                
+                <!-- QUAD 3 -->
+                <div id="quad3"></div>
+                <div id="flatplate">
+                    <div id="plate1"></div>
+                    <div id="plate2"></div>
+                </div>
+                
+                <div id="txt1"></div>
+                <div id="txt2"></div>
+                <div id="txt3"></div>
+                <div id="txtDisclaimer"></div>
+                
+                <div id="sandwich_top"></div>
+                <div id="sandwich_mid1"></div>
+                <div id="sandwich_mid2"></div>
+                <div id="sandwich_base"></div>
+                
+                <div id="smoke"></div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/***
+
+///TRIGGERCELLDESIGNS 2005-2015
+***/
+
+
+@media only screen and (min-width: 200px) and (max-width: 890px) {
+ 	body .container{
+    	max-width: 520px!important; 
+        padding: 0px 50px;
+  	} 
+}
+
+
+.jm-logo {
+    
+}
+
+body {
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 780px; 
+} 
+
+.list-group-item {
+    padding: 5px 15px;
+}
+.txtSubway {
+    color: #005542;
+}
+.navbar {
+    background-color: white;
+}
+
+.panel-body {
+    max-width: 400px;
+}
+.navbar-brand {
+    padding: 0px 15px;
+}
+
+#home {
+    padding: 10px 0;
+    background-color: white;
+}
+
+.footer-text {
+    color: darkgray
+}

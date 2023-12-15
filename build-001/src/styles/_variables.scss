@@ -1,0 +1,91 @@
+:root {
+  //-- BEIGE
+  --tc-color-beige-lt: #FFFFE5;
+  --tc-color-beige-md: #ABAB9A;
+  --tc-color-beige-dk: #59564F;
+
+  //-- YELLOW
+  --tc-color-yellow-lt: #FFF8E8;
+  --tc-color-yellow-md: #FED049;
+  --tc-color-yellow-dk: #D29D00;
+
+  //-- RED
+  --tc-color-red-lt: #FFECEC;
+  --tc-color-red-md: #FF4343; //
+  --tc-color-red-dk: #B21236;
+
+  //-- GREEN
+  --tc-color-green-lt: #E7FFE8;
+  --tc-color-green-md: #68B984;
+  --tc-color-green-dk: #285430;
+
+  //-- TEAL
+  --tc-color-teal-lt: #E2FFF9;
+  --tc-color-teal-md: #47A6AC;
+  --tc-color-teal-dk: #054E53;
+
+  //-- BLUE
+  --tc-color-blue-lt: #E5F4FF;
+  --tc-color-blue-md: #2F8AD3;
+  --tc-color-blue-dk: #183967;
+
+  //- PURPLE
+  --tc-color-purple-lt: #F1EDFF;
+  --tc-color-purple-md: #5C5985;
+  --tc-color-purple-dk: #2C2C54;
+
+  //-- GREY
+  --tc-color-grey-xl: #FAFAFA;
+  --tc-color-grey-lt: #E9F2FA;
+  --tc-color-grey-md: #A7BAC5;
+  --tc-color-grey-dk: #192226;
+  --tc-color-grey-xd: #192226;
+
+    //-- VARIANT
+    --tc-color-variant1: #F5F8FA;
+
+  /*
+  #F5F5F5, #F2F2F2, #f5f8fa
+  */
+
+  //-- FONT-SIZE
+  --tc-text-sm: 90%;
+  --tc-text-md: 1rem;
+  --tc-text-lg: 2rem;
+
+  // FONT-WEIGHT
+  --tc-text-weight-sm: 400;
+  --tc-text-weight-md: 500;
+  --tc-text-weight-lg: 600;
+
+  //-- SPAN
+  --tc-span-xs: 0.25rem;
+  --tc-span-sm: 0.5rem;
+  --tc-span-md: 0.75rem;
+  --tc-span-lg: 1rem;
+  --tc-span-xl: 1.5rem;
+  --tc-span-sl: 3rem;
+
+  //-- BORDER
+  --tc-border: 1.5px solid var(--tc-color-grey-md);
+  --tc-border-radius: 0.5rem;
+
+  //-- DROPSHADOW
+  --tc-box-shadow: 0 0px 3px var(--tc-color-grey-lt);
+
+  //-- NAVBAR HEIGHT
+  --tc-nav-height: 50px;
+
+  //-- ANIMATIONS (check animation styles)
+  --tc-anim-transition: all 0.25s ease-in-out;
+  --tc-anim-bounce: anim-bounce 0.5s infinite ease-in-out;
+  --tc-anim-fadedown: anim-fadedown 0.75s infinite ease-in-out;
+
+
+  //-- BREAKPOINTS
+  --tc-screen-xl: 1200px;
+  --tc-screen-lg: 992px;
+  --tc-screen-md: 768px;
+  --tc-screen-sm: 600px;
+  --tc-screen-xs: 375px;
+}

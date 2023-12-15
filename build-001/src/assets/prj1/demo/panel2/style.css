@@ -1,0 +1,218 @@
+/***
+
+///TRIGGERCELLDESIGNS 2005-2015
+***/
+
+
+body {
+    margin: 0px;
+}
+
+#container {
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #c2c2c2;
+    background-color: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+
+#banner {
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+/**  **/
+#stageTexture {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2000px;
+    height: 2000px;
+    opacity: 1;
+    background: url('images/imgTexture.png') no-repeat;
+    z-index: 0;
+}
+
+/**  **/
+#stageCurtain {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 1080px;
+    background-color: #fbfbfb;
+    z-index: 100;
+}
+
+/**  **/
+#stageSeparator {
+    position: absolute;
+    left: 1089px;
+    top: 142px;
+    width: 3px;
+    height: 780px;
+    opacity: 1;
+    background: url('images/imgSeparator.png') no-repeat;
+    z-index: 1;
+}
+
+/**  **/
+#imgSub1 {
+    position: absolute;
+    left: 1097px;
+    top: 677px;
+    width: 817px;
+    height: 264px;
+    opacity: 1;
+    background: url('images/imgSub1.png') no-repeat;
+    z-index: 2;
+}
+
+/**  **/
+#imgSub2 {
+    position: absolute;
+    left: 1097px;
+    top: 670px;
+    width: 817px;
+    height: 271px;
+    opacity: 1;
+    background: url('images/imgSub2.png') no-repeat;
+    z-index: 2;
+}
+
+/**  **/
+#imgSub3 {
+    position: absolute;
+    left: 1097px;
+    top: 658px;
+    width: 817px;
+    height: 283px;
+    opacity: 1;
+    background: url('images/imgSub3.png') no-repeat;
+    z-index: 2;
+}
+
+/**  **/
+#txtHeader {
+    position: absolute;
+    left: 1161px;
+    top: 384px;
+    width: 700px;
+    height: 319px;
+    opacity: 1;
+    background: url('images/txtHeader.png') no-repeat;
+    z-index: 1;
+}
+
+/**  **/
+#txtCopyright {
+    position: absolute;
+    left: 60px;
+    top: 1046px;
+    width: 521px;
+    height: 5px;
+    opacity: 1;
+    background: url('images/txtCopyright.png') no-repeat;
+    z-index: 1;
+}
+
+/**  **/
+#txtGroup1 {
+    position: absolute;
+    left: 60px;
+    top: 231px;
+    width: 795px;
+    height: 159px;
+    opacity: 1;
+    background: url('images/txtGroup1.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtGroup2 {
+    position: absolute;
+    left: 60px;
+    top: 430px;
+    width: 1050px;
+    height: 225px;
+    opacity: 1;
+    display: block;
+    z-index: 1;
+}
+
+/**  **/
+#txtGroup2_txt0 {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 519px;
+    height: 35px;
+    opacity: 1;
+    background: url('images/txtGroup2_txt0.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtGroup2_txt1 {
+    position: absolute;
+    left: -7px;
+    top: 60px;
+    width: 1030px;
+    height: 50px;
+    opacity: 1;
+    overflow: hidden;
+    background: url('images/txtGroup2_txt1.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtGroup2_txt2 {
+    position: absolute;
+    left: -7px;
+    top: 120px;
+    width: 1030px;
+    height: 50px;
+    opacity: 1;
+    overflow: hidden;
+    background: url('images/txtGroup2_txt2.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtGroup2_txt3 {
+    position: absolute;
+    left: -7px;
+    top: 180px;
+    width: 1030px;
+    height: 50px;
+    opacity: 1;
+    overflow: hidden;
+    background: url('images/txtGroup2_txt3.png') no-repeat 0px 0px;
+    z-index: 1;
+}
+
+/**  **/
+#txtGroup3 {
+    position: absolute;
+    left: 60px;
+    top: 692px;
+    width: 920px;
+    height: 213px;
+    opacity: 1;
+    overflow: hidden;
+    background: url('images/txtGroup3.png') no-repeat 0px 0px;
+    z-index: 1;
+}

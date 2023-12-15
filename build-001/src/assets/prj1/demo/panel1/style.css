@@ -1,0 +1,739 @@
+/***
+
+///TRIGGERCELLDESIGNS 2005-2015
+***/
+
+
+body {
+    margin: 0px;
+}
+
+#container {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #c2c2c2;
+    background-color: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+}
+
+#banner {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: block;
+    overflow: hidden;
+    background: url('images/bground.jpg') no-repeat;
+}
+
+#stageCurtain {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    background-color: #fbfbfb;
+    z-index: 100;
+}
+
+#f0_txtHeader1 {
+    position: absolute;
+    left: 70px;
+    top: 143px;
+    width: 461px;
+    height: 593px;
+    opacity: 1;
+    background: url('images/f0_txt1.png') no-repeat;
+    z-index: 1;
+}
+
+#f0_img1 {
+    position: absolute;
+    left: 40px;
+    top: 711px;
+    width: 519px;
+    height: 239px;
+    opacity: 1;
+    background: url('images/f0_img1.png') no-repeat;
+    z-index: 2;
+}
+
+#f0_img2 {
+    position: absolute;
+    left: 20px;
+    top: 711px;
+    width: 551px;
+    height: 262px;
+    opacity: 1;
+    background: url('images/f0_img2.png') no-repeat;
+    z-index: 2;
+}
+
+#f0_img3 {
+    position: absolute;
+    left: 45px;
+    top: 711px;
+    width: 515px;
+    height: 258px;
+    opacity: 1;
+    background: url('images/f0_img3.png') no-repeat;
+    z-index: 2;
+}
+
+#f0_img4 {
+    position: absolute;
+    left: 55px;
+    top: 711px;
+    width: 479px;
+    height: 254px;
+    opacity: 1;
+    background: url('images/f0_img4.png') no-repeat;
+    z-index: 2;
+}
+
+/************** FRAME1 **/
+
+#f1_txtHeader1 {
+    position: absolute;
+    left: 633px;
+    top: 390px;
+    width: 597px;
+    height: 220px;
+    opacity: 1;
+    background: url('images/f1_txtHeader1.png') no-repeat;
+    z-index: 1;
+}
+
+#f1_txt1 {
+    position: absolute;
+    left: 919px;
+    top: 627px;
+    width: 375px;
+    height: 250px;
+    opacity: 1;
+    background: url('images/f1_txt1.png') no-repeat;
+    z-index: 1;
+}
+
+#f1_img1 {
+    position: absolute;
+    left: 544px;
+    top: -160px;
+    width: 427px;
+    height: 576px;
+    opacity: 1;
+    background: url('images/f1_img1.png') no-repeat;
+    z-index: 1;
+}
+
+#f1_img2 {
+    position: absolute;
+    left: 1147px;
+    top: -210px;
+    width: 744px;
+    height: 827px;
+    opacity: 1;
+    background: url('images/f1_img2.png') no-repeat;
+    z-index: 1;
+}
+
+#f1_img3 {
+    position: absolute;
+    left: 584px;
+    top: 785px;
+    width: 360px;
+    height: 368px;
+    opacity: 1;
+    background: url('images/f1_img3.png') no-repeat;
+    z-index: 1;
+}
+
+#f1_img4a {
+    position: absolute;
+    left: 1368px;
+    top: 734px;
+    width: 466px;
+    height: 1187px;
+    opacity: 1;
+    background: url('images/f1_img4a.png') no-repeat;
+    z-index: 1;
+}
+
+#f1_img4b {
+    position: absolute;
+    left: 1643px;
+    top: 639px;
+    width: 320px;
+    height: 621px;
+    opacity: 1;
+    background: url('images/f1_img4b.png') no-repeat;
+    z-index: 1;
+}
+
+
+/************** FRAME2 **/
+
+#f2_txtHeader1 {
+    position: absolute;
+    left: 644px;
+    top: 28px;
+    width: 630px;
+    height: 230px;
+    opacity: 1;
+    background: url('images/f2_txtHeader1.png') no-repeat;
+    z-index: 1;
+}
+
+#f2_txtHeader2 {
+    position: absolute;
+    left: 655px;
+    top: 590px;
+    width: 613px;
+    height: 233px;
+    opacity: 1;
+    background: url('images/f2_txtHeader2.png') no-repeat;
+    z-index: 1;
+}
+
+#f2_txt1 {
+    position: absolute;
+    left: 856px;
+    top: 284px;
+    width: 174px;
+    height: 303px;
+    opacity: 1;
+    background: url('images/f2_txt1.png') no-repeat;
+    z-index: 1;
+}
+
+#f2_txt2 {
+    position: absolute;
+    left: 1011px;
+    top: 768px;
+    width: 815px;
+    height: 272px;
+    opacity: 1;
+    background: url('images/f2_txt2.png') no-repeat;
+    z-index: 1;
+}
+
+#f2_img1 {
+    position: absolute;
+    left: 1320px;
+    top: -200px;
+    width: 803px;
+    height: 810px;
+    opacity: 1;
+    background: url('images/f2_img1.png') no-repeat;
+    z-index: 1;
+}
+
+#f2_img2 {
+    position: absolute;
+    left: 1828px;
+    top: 536px;
+    width: 277px;
+    height: 271px;
+    opacity: 1;
+    background: url('images/f2_img2.png') no-repeat;
+    z-index: 1;
+}
+
+#f2_img3 {
+    position: absolute;
+    left: 612px;
+    top: 859px;
+    width: 345px;
+    height: 344px;
+    opacity: 1;
+    background: url('images/f2_img3.png') no-repeat;
+    z-index: 1;
+}
+
+
+/************** FRAME3 **/
+
+#f3_txtHeader1 {
+    position: absolute;
+    left: 734px;
+    top: 274px;
+    width: 937px;
+    height: 238px;
+    opacity: 1;
+    background: url('images/f3_txtHeader1.png') no-repeat;
+    z-index: 1;
+}
+
+#f3_txt1 {
+    position: absolute;
+    left: 1124px;
+    top: 548px;
+    width: 512px;
+    height: 165px;
+    opacity: 1;
+    background: url('images/f3_txt1.png') no-repeat;
+    z-index: 1;
+}
+
+/** CUCUMBER **/
+#f3_img1 {
+    position: absolute;
+    left: 537px;
+    top: -50px;
+    width: 435px;
+    height: 180px;
+    opacity: 1;
+    background: url('images/f3_img1.png') no-repeat;
+    z-index: 1;
+}
+
+/** TOMATO **/
+#f3_img2 { 
+    position: absolute;
+    left: 1182px;
+    top: -100px;
+    width: 373px;
+    height: 285px;
+    opacity: 1;
+    background: url('images/f3_img2.png') no-repeat;
+    z-index: 1;
+}
+
+/** CUCUMBER BOWL **/
+#f3_img3 {
+    position: absolute;
+    left: 1615px;
+    top: 0px;
+    width: 285px;
+    height: 296px;
+    opacity: 1;
+    background: url('images/f3_img3.png') no-repeat;
+    z-index: 1;
+}
+
+/** CUCUMBER SLICES **/
+#f3_img4a {
+    position: absolute;
+    left: 1448px;
+    top: 174px;
+    width: 124px;
+    height: 128px;
+    -ms-transform: rotate(-60deg); /* IE 9 */
+    -webkit-transform: rotate(-60deg); /* Safari */
+    transform: rotate(-60deg);
+    opacity: 1;
+    background: url('images/f3_img4.png') no-repeat;
+    z-index: 1;
+}
+
+/** CUCUMBER SLICES **/
+#f3_img4b {
+    position: absolute;
+    left: 1497px;
+    top: 264px;
+    width: 124px;
+    height: 128px;
+    opacity: 1;
+    background: url('images/f3_img4.png') no-repeat;
+    z-index: 1;
+}
+
+/** TOMATO BOWL **/
+#f3_img5 {
+    position: absolute;
+    left: 633px;
+    top: 650px;
+    width: 506px;
+    height: 543px;
+    opacity: 1;
+    background: url('images/f3_img5.png') no-repeat;
+    z-index: 1;
+}
+
+/** TOMATO SLICE **/
+#f3_img6a {
+    position: absolute;
+    left: 1813px;
+    top: 309px;
+    width: 245px;
+    height: 166px;
+    opacity: 1;
+    background: url('images/f3_img6a.png') no-repeat;
+    z-index: 1;
+}
+
+/** TOMATO SLICE **/
+#f3_img6b {
+    position: absolute;
+    left: 1726px;
+    top: 510px;
+    width: 149px;
+    height: 135px;
+    opacity: 1;
+    background: url('images/f3_img6b.png') no-repeat;
+    z-index: 1;
+}
+
+/** ONION SLICES **/
+#f3_img7a {
+    position: absolute;
+    left: 1770px;
+    top: 690px;
+    width: 185px;
+    height: 239px;
+    opacity: 1;
+    background: url('images/f3_img7a.png') no-repeat;
+    z-index: 1;
+}
+
+/** ONION SLICES **/
+#f3_img7b {
+    position: absolute;
+    left: 1840px;
+    top: 950px;
+    width: 107px;
+    height: 137px;
+    opacity: 1;
+    background: url('images/f3_img7b.png') no-repeat;
+    z-index: 1;
+}
+
+/** SLICED ONIONS **/
+#f3_img8 {
+    position: absolute;
+    left: 1229px;
+    top: 898px;
+    width: 383px;
+    height: 255px;
+    opacity: 1;
+    background: url('images/f3_img8.png') no-repeat;
+    z-index: 1;
+}
+
+/** LEAVES **/
+#f3_img9a {
+    position: absolute;
+    left: 1513px;
+    top: 821px;
+    width: 117px;
+    height: 81px;
+    -ms-transform: rotate(-0deg); /* IE 9 */
+    -webkit-transform: rotate(-0deg); /* Safari */
+    transform: rotate(-0deg);
+    opacity: 1;
+    background: url('images/f3_img9.png') no-repeat;
+    z-index: 1;
+}
+
+/** LEAVES **/
+#f3_img9b {
+    position: absolute;
+    left: 1467px;
+    top: 775px;
+    width: 117px;
+    height: 81px;
+    -ms-transform: rotate(65deg); /* IE 9 */
+    -webkit-transform: rotate(65deg); /* Safari */
+    transform: rotate(65deg);
+    opacity: 1;
+    background: url('images/f3_img9.png') no-repeat;
+    z-index: 1;
+}
+
+/** LEAVES **/
+#f3_img9c {
+    position: absolute;
+    left: 1675px;
+    top: 938px;
+    width: 82px;
+    height: 107px;
+    -ms-transform: rotate(-0deg); /* IE 9 */
+    -webkit-transform: rotate(-0deg); /* Safari */
+    transform: rotate(-0deg);
+    opacity: 1;
+    background: url('images/f3_img9a.png') no-repeat;
+    z-index: 1;
+}
+
+/** LEAVES **/
+#f3_img9d {
+    position: absolute;
+    left: 1044px;
+    top: 145px;
+    width: 117px;
+    height: 81px;
+    -ms-transform: rotate(-25deg); /* IE 9 */
+    -webkit-transform: rotate(-25deg); /* Safari */
+    transform: rotate(-25deg);
+    opacity: 1;
+    background: url('images/f3_img9.png') no-repeat;
+    z-index: 1;
+}
+
+/** LEAVES **/
+#f3_img9e {
+    position: absolute;
+    left: 687px;
+    top: 156px;
+    width: 82px;
+    height: 107px;
+    -ms-transform: rotate(70deg); /* IE 9 */
+    -webkit-transform: rotate(70deg); /* Safari */
+    transform: rotate(70deg);
+    opacity: 1;
+    background: url('images/f3_img9a.png') no-repeat;
+    z-index: 1;
+}
+
+
+/************** FRAME4 **/
+
+/** HEADER1 **/
+#f4_txtHeader1 {
+    position: absolute;
+    left: 688px;
+    top: 338px;
+    width: 580px;
+    height: 204px;
+    opacity: 1;
+    background: url('images/f4_txtHeader1.png') no-repeat;
+    z-index: 1;
+}
+
+/** SWEET ONION **/
+#f4_imgTxt1 {
+    position: absolute;
+    left: 658px;
+    top: 247px;
+    width: 198px;
+    height: 21px;
+    opacity: 1;
+    background: url('images/f4_imgTxt1.png') no-repeat;
+    z-index: 1;
+}
+
+/** HONEY MUSTARD **/
+#f4_imgTxt2 {
+    position: absolute;
+    left: 1155px;
+    top: 224px;
+    width: 242px;
+    height: 21px;
+    opacity: 1;
+    background: url('images/f4_imgTxt2.png') no-repeat;
+    z-index: 1;
+}
+
+/** OIL **/
+#f4_imgTxt3 {
+    position: absolute;
+    left: 817px;
+    top: 750px;
+    width: 45px;
+    height: 21px;
+    opacity: 1;
+    background: url('images/f4_imgTxt3.png') no-repeat;
+    z-index: 1;
+}
+
+/** KETCHUP **/
+#f4_imgTxt4 {
+    position: absolute;
+    left: 1110px;
+    top: 817px;
+    width: 132px;
+    height: 21px;
+    opacity: 1;
+    background: url('images/f4_imgTxt4.png') no-repeat;
+    z-index: 1;
+}
+
+/** MUSTARD **/
+#f4_imgTxt5 {
+    position: absolute;
+    left: 1691px;
+    top: 626px;
+    width: 134px;
+    height: 21px;
+    opacity: 1;
+    background: url('images/f4_imgTxt5.png') no-repeat;
+    z-index: 1;
+}
+
+/** VINEGAR **/
+#f4_imgTxt6 {
+    position: absolute;
+    left: 1433px;
+    top: 962px;
+    width: 127px;
+    height: 21px;
+    opacity: 1;
+    background: url('images/f4_imgTxt6.png') no-repeat;
+    z-index: 1;
+}
+
+/** SWEET ONION **/
+#f4_img1 {
+    position: absolute;
+    left: 638px;
+    top: 11px;
+    width: 222px;
+    height: 224px;
+    opacity: 1;
+    background: url('images/f4_img1.png') no-repeat;
+    z-index: 1;
+}
+
+/** HONEY MUSTARD **/
+#f4_img2 {
+    position: absolute;
+    left: 1156px;
+    top: -20px;
+    width: 235px;
+    height: 230px;
+    opacity: 1;
+    background: url('images/f4_img2.png') no-repeat;
+    z-index: 1;
+}
+
+/** OIL **/
+#f4_img3 {
+    position: absolute;
+    left: 727px;
+    top: 797px;
+    width: 233px;
+    height: 231px;
+    opacity: 1;
+    background: url('images/f4_img3.png') no-repeat;
+    z-index: 1;
+}
+
+/** KETCHUP **/
+#f4_img4a {
+    position: absolute;
+    left: 1322px;
+    top: 576px;
+    width: 223px;
+    height: 222px;
+    opacity: 1;
+    background: url('images/f4_img4a.png') no-repeat;
+    z-index: 1;
+}
+
+/** KETCHUP SPREAD **/
+#f4_img4b {
+    position: absolute;
+    left: 1046px;
+    top: 527px;
+    width: 322px;
+    height: 271px;
+    opacity: 1;
+    background: url('images/f4_img4b.png') no-repeat;
+    z-index: 0;
+}
+
+/** KETCHUP SPREAD **/
+#f4_img4b1 {
+    position: absolute;
+    left: 1050px;
+    top: 550px;
+    width: 134px;
+    height: 154px;
+    opacity: 1;
+    background: url('images/f4_img4b1.png') no-repeat;
+    z-index: 0;
+}
+
+/** KETCHUP SPREAD **/
+#f4_img4b2 {
+    position: absolute;
+    left: 1119px;
+    top: 527px;
+    width: 158px;
+    height: 208px;
+    opacity: 1;
+    background: url('images/f4_img4b2.png') no-repeat;
+    z-index: 0;
+}
+
+/** KETCHUP SPREAD **/
+#f4_img4b3 {
+    position: absolute;
+    left: 1089px;
+    top: 563px;
+    width: 267px;
+    height: 230px;
+    opacity: 1;
+    background: url('images/f4_img4b3.png') no-repeat;
+    z-index: 0;
+}
+/** KETCHUP SPREAD **/
+#f4_img4b4 {
+    position: absolute;
+    left: 1201px;
+    top: 635px;
+    width: 167px;
+    height: 163px;
+    opacity: 1;
+    background: url('images/f4_img4b4.png') no-repeat;
+    z-index: 0;
+}
+
+/** MUSTARD **/
+#f4_img5 {
+    position: absolute;
+    left: 1641px;
+    top: 392px;
+    width: 224px;
+    height: 223px;
+    opacity: 1;
+    background: url('images/f4_img5.png') no-repeat;
+    z-index: 1;
+}
+
+/** VINGEGAR **/
+#f4_img6 {
+    position: absolute;
+    left: 1577px;
+    top: 860px;
+    width: 232px;
+    height: 231px;
+    opacity: 1;
+    background: url('images/f4_img6.png') no-repeat;
+    z-index: 1;
+}
+
+/** SAUCE SPREAD **/
+#f4_img7a {
+    position: absolute;
+    left: 513px;
+    top: 900px;
+    width: 471px;
+    height: 524px;
+    opacity: 1;
+    background: url('images/f4_img7.png') no-repeat;
+    z-index: 0;
+}
+
+/** SAUCE SPREAD **/
+#f4_img7b {
+    position: absolute;
+    left: 1406px;
+    top: -300px;
+    width: 471px;
+    height: 524px;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+    opacity: 1;
+    background: url('images/f4_img7.png') no-repeat;
+    z-index: 0;
+}
