@@ -1,7 +1,7 @@
 export default {
   siteName: "TriggercellDesigns",
-
   siteRoot: " | TriggercellDesigns",
+  siteCaption: "Hand-crafted with love & care ❤️",
 
   email: "hello@triggercell.com",
 

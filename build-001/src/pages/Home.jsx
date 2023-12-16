@@ -8,45 +8,17 @@ export default function Home() {
 
   // ARRAY: CLIENTS
   const clients = [
-    {
-      id: 1,
-      title: "Triggercell Designs",
-      src: "./src/assets/clients/client1.png",
-    },
-    { id: 2, title: "Mimoco", src: "./src/assets/clients/client2.png" },
-    { id: 3, title: "MullenLowe", src: "./src/assets/clients/client3.png" },
-    {
-      id: 4,
-      title: "Quickhit Football",
-      src: "./src/assets/clients/client4.png",
-    },
-    {
-      id: 5,
-      title: "Arnold Worldwide",
-      src: "./src/assets/clients/client5.png",
-    },
-    { id: 6, title: "SapientNitro", src: "./src/assets/clients/client6.png" },
-    { id: 7, title: "DigitasLBi", src: "./src/assets/clients/client7.png" },
-    {
-      id: 8,
-      title: "Jack Morton Worldwide",
-      src: "./src/assets/clients/client8.png",
-    },
-    {
-      id: 9,
-      title: "EF Go Ahead Tours",
-      src: "./src/assets/clients/client9.png",
-    },
-    {
-      id: 10,
-      title: "Belfinesse Concierge",
-      src: "./src/assets/clients/client10.png",
-    },
-    {
-      id: 11,
-      title: "Blues Wireless",
-      src: "./src/assets/clients/client11.png",
-    },
+    { id: 1, title: "Triggercell Designs" },
+    { id: 2, title: "Mimoco" },
+    { id: 3, title: "MullenLowe" },
+    { id: 4, title: "Quickhit Football" },
+    { id: 5, title: "Arnold Worldwide" },
+    { id: 6, title: "SapientNitro" },
+    { id: 7, title: "DigitasLBi" },
+    { id: 8, title: "Jack Morton Worldwide" },
+    { id: 9, title: "EF Go Ahead Tours" },
+    { id: 10, title: "Belfinesse Concierge" },
+    { id: 11, title: "Blues Wireless" },
   ];
 
   // ARRAY: SKILLS
@@ -108,7 +80,7 @@ export default function Home() {
     <div key={client.id} className="clients-tile col-md-3 col-sm-6 col-xs-6">
       <img
         className="img-fluid"
-        src={client.src}
+        src={"./src/assets/clients/client"+client.id+".png"}
         title={client.title}
         alt={client.title}
       />
@@ -128,16 +100,13 @@ export default function Home() {
     </figure>
   ));
 
-
-
   // SCROLL CLICK
   function handleScrollClick(e) {
     e.target.scrollIntoView({ behavior: "smooth" });
     console.log(e.target);
   }
 
-
-  document.title = componentName+globalvars.siteRoot;
+  document.title = componentName+globalvars.siteRoot; // DOCUMENT TITLE
 
   return (
     <>
