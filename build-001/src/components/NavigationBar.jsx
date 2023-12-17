@@ -20,7 +20,8 @@ export default function NavigationBar() {
   const arrSocialLinks = [
     {id: 1, name: "LinkedIn", icon: (icons.icn_linkedin), url: "https://linkedin.com/in/hdinga"},
     {id: 2, name: "Behance", icon: (icons.icn_behance), url: "https://www.behance.net/triggercell"},
-    {id: 3, name: "Instagram", icon: (icons.icn_instagram), url: "https://www.instagram.com/triggercell/"},
+    {id: 3, name: "Github", icon: (icons.icn_github), url: "https://github.com/hdinga"},
+    {id: 4, name: "Instagram", icon: (icons.icn_instagram), url: "https://www.instagram.com/triggercell"},
   ];
 
   const listNavItems = arrNavItems.map((navitem) =>
