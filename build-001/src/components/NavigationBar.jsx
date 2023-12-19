@@ -5,8 +5,8 @@ import icons from "./_icons";
 
 export default function NavigationBar() {
 
-  // nav menu state
-  const [isActive, setIsActive] = useState(false);
+  const colorcode = getComputedStyle(document.body); // get color value from document
+  const [isActive, setIsActive] = useState(false); // nav menu state
 
   // nav items
   const arrNavItems = [
@@ -41,8 +41,10 @@ export default function NavigationBar() {
     setIsActive(!isActive);
     if (isActive) {
       gsap.to('.nav-menu-container', {top:"-100%", duration:.2, delay: 0.2, ease: 'circ.Out'});
+      gsap.to('#icn_menu .icn-bground', {fill:(colorcode.getPropertyValue('--tc-color-grey-lt')), ease: 'circ.Out'}); // get color var from document
     } else {
       gsap.to('.nav-menu-container', {top:"0%", duration:.2, delay: 0.2, ease: 'circ.Out'});
+      gsap.to('#icn_menu .icn-bground', {fill:(colorcode.getPropertyValue('--tc-color-red-md')), ease: 'circ.Out'});
     }
   }
 
@@ -63,7 +65,7 @@ export default function NavigationBar() {
               { listNavItems }
             </ul>
             <div className="nav-contact">
-              <span className="section-label">Get in touch</span>
+              <span className="section-label">Let's get in touch</span>
               <div>
                 <a href={'mailto:'+vars.email} className="email-link">{vars.email}</a>
               </div>

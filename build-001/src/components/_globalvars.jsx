@@ -3,6 +3,8 @@ export default {
   siteRoot: " | TriggercellDesigns",
   siteCaption: "Hand-crafted with love & care ❤️",
 
+  roleDescription: "I am a Senior UX UI Product Engineer and architect of amazing user experiences!",
+
   email: "hello@triggercell.com",
 
   currentYear: (new Date().getFullYear()),

@@ -73,14 +73,36 @@
 .tc-masthead {
   display: flex;
   position: relative;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  padding: 5rem;
+  text-align: center;
+  color: #FFF;
+  overflow: hidden;
   background: url("../assets/bground/tc-hero-bground2.jpg") no-repeat center;
   background-size: cover;
   z-index: 20;
 
-  .masthead-header {
-    z-index: 21;
+  .masthead-title {
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.25rem 0;
+
+    .masthead-writer {
+      font-weight: 600;
+      padding: 0rem 0.5rem;
+      margin-left: 0.25rem;
+      border-radius: 0.3rem;
+      background-color: var(--tc-color-red-md);
+
+      &::after {
+        content: "_";
+        padding-left: .2rem;
+        animation: anim_pulse 1s infinite ease;
+      }
+    }
   }
 }
 
@@ -104,7 +126,6 @@ header {
 }
 
 nav {
-
   .nav-header {
     display: flex;
     position: fixed;
@@ -112,6 +133,7 @@ nav {
     left: 0;
     width: 100%;
     height: var(--tc-nav-height);
+    background-color: #19222635; // --tc-color-grey-dk +35% opacity
     z-index: 42;
   }
 

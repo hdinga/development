@@ -103,7 +103,6 @@ export default function Home() {
   // SCROLL CLICK
   function handleScrollClick(e) {
     e.target.scrollIntoView({ behavior: "smooth" });
-    console.log(e.target);
   }
 
   document.title = componentName+globalvars.siteRoot; // DOCUMENT TITLE

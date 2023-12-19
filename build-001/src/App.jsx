@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Preloader from "./components/Preloader";
 import vars from "./components/_globalvars";
 import "./styles/styles.scss";
