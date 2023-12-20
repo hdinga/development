@@ -1,17 +1,22 @@
-import icons from "./_icons"
-import TypewriterFX from "./TypewriterFX"
+import icons from "./_icons";
+import { HeaderMouseFX } from "./_animations";
+import { Typewriter } from "./_animations";
+
+import { useEffect } from "react";
 
 export default function HeroHome ({onClick}) {
 
-
+  useEffect(() => {
+    Typewriter();
+    HeaderMouseFX();
+  });
 
   return (
     <>
     <div className="tc-masthead">
       <div className="masthead-content">
-        <h3 className="masthead-title">
-          I am 
-          <TypewriterFX />
+        <h3 className="masthead-header">
+          I am <span className="masthead-title"></span>
         </h3>
         <p>I am a Senior UX UI Product Engineer and architect of amazing user experiences!</p>
       </div>

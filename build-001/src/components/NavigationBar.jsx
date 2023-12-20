@@ -36,7 +36,7 @@ export default function NavigationBar() {
     </a>
   )
 
-  //
+  // MENU OPEN/CLOSE FUNCTION
   function fnMenuState() {
     setIsActive(!isActive);
     if (isActive) {
