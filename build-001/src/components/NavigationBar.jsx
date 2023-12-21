@@ -40,11 +40,15 @@ export default function NavigationBar() {
   function fnMenuState() {
     setIsActive(!isActive);
     if (isActive) {
-      gsap.to('.nav-menu-container', {top:"-100%", duration:.2, delay: 0.2, ease: 'circ.Out'});
+      gsap.to('.nav-menu-container', {top:"-100%", duration:.2, ease: 'power1.in'});
       gsap.to('#icn_menu .icn-bground', {fill:(colorcode.getPropertyValue('--tc-color-grey-lt')), ease: 'circ.Out'}); // get color var from document
+      gsap.to('#icn_menu .icn-fground1', {rotation: 0, transformOrigin:"80% 100%", ease: 'circ.Out'});
+      gsap.to('#icn_menu .icn-fground2', {rotation: 0, transformOrigin:"80% 0%",  ease: 'circ.Out'});
     } else {
-      gsap.to('.nav-menu-container', {top:"0%", duration:.2, delay: 0.2, ease: 'circ.Out'});
+      gsap.to('.nav-menu-container', {top:"0%", duration:.2, ease: 'power1.in'});
       gsap.to('#icn_menu .icn-bground', {fill:(colorcode.getPropertyValue('--tc-color-red-md')), ease: 'circ.Out'});
+      gsap.to('#icn_menu .icn-fground1', {rotation: -45, transformOrigin:"80% 100%", ease: 'circ.Out'});
+      gsap.to('#icn_menu .icn-fground2', {rotation: 45, transformOrigin:"80% 0%",  ease: 'circ.Out'});
     }
   }
 
