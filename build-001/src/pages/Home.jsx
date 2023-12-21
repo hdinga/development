@@ -1,7 +1,8 @@
 import NavigationBar from "../components/NavigationBar";
 import HeroHome from "../components/HeroHome";
 import Footer from "../components/Footer";
-import globalvars from "../components/_globalvars";
+import vars from "../components/_globalvars";
+import icons from "../components/_icons";
 
 export default function Home() {
   const componentName = "Home";
@@ -105,12 +106,13 @@ export default function Home() {
     e.target.scrollIntoView({ behavior: "smooth" });
   }
 
-  document.title = componentName+globalvars.siteRoot; // DOCUMENT TITLE
+  document.title = componentName+vars.siteRoot; // DOCUMENT TITLE
 
   return (
     <>
       <NavigationBar />
       <HeroHome onClick={handleScrollClick} />
+      <div className="" title="Scroll up">{icons.icn_arrowup}</div>
 
       <section className="section-projects">
         <div className="container-fluid">

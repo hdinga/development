@@ -1,19 +1,6 @@
-/***--------------------------------------------------------------------------------// ANIMATIONS **/
-
-.__anim-pulseright {
-  animation: anim_arrowright 0.75s infinite ease-in-out;
-}
-
-.__anim-pulseleft {
-  animation: anim_arrowleft 1s infinite ease-in-out;
-}
-
-.__anim-spinloader {
-  animation: anim_spinloader 2s infinite ease;
-}
-
 /***--------------------------------------------------------------------------------// KEYFRAMES **/
 
+//-- SPIN LOADER --
 @keyframes anim_spinloader {
   0% {
     opacity: 0;
@@ -28,7 +15,7 @@
     transform: translate(-50%, -50%) rotate(360deg) scale(1);
   }
 }
-//
+//-- FADE DOWN --
 @keyframes anim-fadedown {
   0% {
     opacity: 1;
@@ -36,11 +23,11 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(50%);
   }
 }
 
-//
+//-- BOUNCE --
 @keyframes anim-bounce {
   0% {
     opacity: 1;
@@ -56,7 +43,7 @@
   }
 }
 
-//
+//-- ARROW RIGHT --
 @keyframes anim_arrowright {
   0% {
     opacity: 1;
@@ -67,7 +54,7 @@
     transform: translateX(40%);
   }
 }
-//
+//-- ARROW LEFT --
 @keyframes anim_arrowleft {
   0% {
     opacity: 1;
@@ -80,7 +67,7 @@
 }
 
 
-//
+//-- PULSE --
 @keyframes anim_pulse {
   0% {
     opacity: 0;
