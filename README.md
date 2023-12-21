@@ -1,2 +1,2 @@
 # All things design & development
-chore, refactor, update, feature
+chore (updates), refactor (changes, feature (new)
