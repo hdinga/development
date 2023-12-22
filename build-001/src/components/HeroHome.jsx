@@ -1,6 +1,6 @@
 import icons from "./_icons";
-import { HeaderMouseFX } from "./_animations";
-import { Typewriter } from "./_animations";
+import { HeaderMouseFX } from "./_interactions";
+import { Typewriter } from "./_behaviors";
 
 import { useEffect } from "react";
 

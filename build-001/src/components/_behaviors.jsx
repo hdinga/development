@@ -62,30 +62,6 @@ export const Typewriter = () => {
   }
 }
 
-//-- [FX] HEADER MOUSE PARALLAX --
-export const HeaderMouseFX = () => {
-  // defined mouse area
-  document.querySelector('.tc-masthead').addEventListener("mousemove", mouseMoveFunc);
-  document.querySelector('.tc-masthead').addEventListener("mouseleave", mouseleaveFunc);
-
-  // mouse-move function
-  function mouseMoveFunc(e) {
-    var offsetX = (e.clientX * -0.025); //displace based on mouse location on page
-    var offsetY = (e.clientY * -0.025); //displace based on mouse location on page
-
-    gsap.to(".masthead-content", {
-      x: offsetX, y: offsetY, ease: "circ.Out",
-    });
-  }
-
-  // mouse-leave function
-  function mouseleaveFunc(e) {
-    gsap.to(".masthead-content", {
-      x: 0, y: 0, transform: 'translateX(0%) translateY(0%)', delay: 3, ease: "circ.out", 
-    });
-  }
-}
-
 //-- [ANIMATION, FX] NEW --
 export const NewAnimation = () => {
   console.log("hello world!");

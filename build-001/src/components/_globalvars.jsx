@@ -29,4 +29,6 @@ export default {
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQQDTMBKSZ"></script>
     <script></script>
   </>,
+
+  gsapEase: 'circ.easeOut',
 };

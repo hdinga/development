@@ -52,6 +52,18 @@
 
 /***--------------------------------------------------------------------------------// ICONS **/
 
+.icn-arrowup {
+  position: fixed;
+  bottom: calc((var(--tc-nav-height)) + (var(--tc-nav-height))/4);
+  right: 0;
+  opacity: 0;
+  z-index: 30;
+
+  &:hover {
+    cursor:pointer;
+  }
+}
+
 .icn-social {
   display: inline-block;
   margin: 0.75rem;
@@ -73,7 +85,6 @@
     cursor:pointer;
   }
 }
-
 
 /***--------------------------------------------------------------------------------// MASTHEAD **/
 .tc-masthead {

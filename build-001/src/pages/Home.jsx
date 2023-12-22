@@ -1,8 +1,12 @@
+import { useEffect } from "react";
+
 import NavigationBar from "../components/NavigationBar";
 import HeroHome from "../components/HeroHome";
 import Footer from "../components/Footer";
 import vars from "../components/_globalvars";
 import icons from "../components/_icons";
+import { ScrollToTop } from "../components/_interactions";
+import { PageClickScroll } from "../components/_interactions";
 
 export default function Home() {
   const componentName = "Home";
@@ -101,22 +105,27 @@ export default function Home() {
     </figure>
   ));
 
-  // SCROLL CLICK
-  function handleScrollClick(e) {
-    e.target.scrollIntoView({ behavior: "smooth" });
-  }
+  useEffect(() => {
+    ScrollToTop(); // click arrowup func
+  })
 
   document.title = componentName+vars.siteRoot; // DOCUMENT TITLE
 
   return (
     <>
       <NavigationBar />
-      <HeroHome onClick={handleScrollClick} />
-      <div className="" title="Scroll up">{icons.icn_arrowup}</div>
+      <HeroHome onClick={ PageClickScroll } />
+      <button className="btn tc-icon icn-arrowup" title="Scroll up">
+        { icons.icn_arrowup }
+      </button>
 
       <section className="section-projects">
         <div className="container-fluid">
-          <div className="row pb-5"><div className="col-12"><h2 className="section-label">Case studies</h2></div></div>
+          <div className="row pb-5">
+            <div className="col-12">
+              <h2 className="section-label">Case studies</h2>
+            </div>
+          </div>
           <div className="row">
             { listProjects }
           </div>
@@ -130,7 +139,7 @@ export default function Home() {
               <h2 className="section-label">Expertise</h2>
             </div>
           </div>
-          <div className="row mx-5 no-gutter">{listSkills}</div>
+          <div className="row mx-5 no-gutter">{ listSkills }</div>
         </div>
       </section>
 
@@ -141,7 +150,7 @@ export default function Home() {
               <h2 className="section-label">Client network</h2>
             </div>
           </div>
-          <div className="row mx-5 justify-content-center">{listClients}</div>
+          <div className="row mx-5 justify-content-center">{ listClients }</div>
         </div>
       </section>
 

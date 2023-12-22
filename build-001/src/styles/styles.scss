@@ -63,6 +63,9 @@ a {
   pointer-events: none !important;
 }
 
+// HIDDEN
+.hidden { display: none !important; }
+
 // FONT
 .tc-text-sm { font-size: var(--tc-text-sm); }
 .tc-text-md { font-size: var(--tc-text-lg); }
@@ -90,7 +93,7 @@ Z-INDEX
 0-9   -- BACKGROUND I
 10-19 -- WRAPPER, CONTAINER
 20-29 -- SECTIONS, FOOTER, MASTHEAD
-30-39 -- COPY, IMAGES, CONTENT
+30-39 -- COPY, ICONS, IMAGES, CONTENT
 40-49 -- NAV, MENU, BUTTONS, 
 50-59 -- MODALS
 60-69 -- ALERTS

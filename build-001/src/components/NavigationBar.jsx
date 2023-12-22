@@ -47,8 +47,8 @@ export default function NavigationBar() {
     } else {
       gsap.to('.nav-menu-container', {top:"0%", duration:.2, ease: 'power1.in'});
       gsap.to('#icn_menu .icn-bground', {fill:(colorcode.getPropertyValue('--tc-color-red-md')), ease: 'circ.Out'});
-      gsap.to('#icn_menu .icn-fground1', {rotation: -45, transformOrigin:"80% 100%", ease: 'circ.Out'});
-      gsap.to('#icn_menu .icn-fground2', {rotation: 45, transformOrigin:"80% 0%",  ease: 'circ.Out'});
+      gsap.to('#icn_menu .icn-fground1', { rotation: -45, transformOrigin:"80% 100%", ease: 'circ.Out'});
+      gsap.to('#icn_menu .icn-fground2', { rotation: 45, transformOrigin:"80% 0%",  ease: 'circ.Out'});
     }
   }
 
@@ -58,7 +58,7 @@ export default function NavigationBar() {
       <nav>
         <div className="nav-header">
           <a href="/home.html" className="nav-header-logo" alt="Triggercell Portfolio">{icons.icn_logobrand}</a>
-          <button type="button" className="btn ml-auto" onClick={fnMenuState}>
+          <button type="button" className="btn ml-auto" title="Menu" onClick={fnMenuState}>
             {icons.icn_menu}
           </button>
         </div>
