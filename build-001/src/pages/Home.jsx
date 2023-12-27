@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+//
 import NavigationBar from "../components/NavigationBar";
 import HeroHome from "../components/HeroHome";
 import Footer from "../components/Footer";
@@ -7,6 +7,7 @@ import vars from "../components/_globalvars";
 import icons from "../components/_icons";
 import { ScrollToTop } from "../components/_interactions";
 import { PageClickScroll } from "../components/_interactions";
+import { ContentLoadFX } from "../components/_behaviors";
 
 export default function Home() {
   const componentName = "Home";
@@ -58,7 +59,7 @@ export default function Home() {
 
   // COMPONENT: SKILL
   const listSkills = skills.map((skill) => (
-    <div key={skill.id} className="col-lg-4 col-md-6 col-sm-12">
+    <div key={skill.id} className="col-lg-4 col-md-6 col-sm-12 skill-tile">
       <div className="card ml-1">
         <div className="card-body">
           {skill.title}
@@ -82,7 +83,7 @@ export default function Home() {
 
   // COMPONENT: CLIENT
   const listClients = clients.map((client) => (
-    <div key={client.id} className="clients-tile col-md-3 col-sm-6 col-xs-6">
+    <div key={client.id} className="col-md-3 col-sm-6 col-xs-6 client-tile">
       <img
         className="img-fluid"
         src={"./src/assets/clients/client"+client.id+".png"}
@@ -107,6 +108,9 @@ export default function Home() {
 
   useEffect(() => {
     ScrollToTop(); // click arrowup func
+    ContentLoadFX('.gallery-tile', '.section-projects'); // page content load animation (project)
+    ContentLoadFX('.skill-tile', '.section-expertise'); // page content load animation (skill)
+    ContentLoadFX('.client-tile', '.section-clients'); // page content load animation (clients)
   })
 
   document.title = componentName+vars.siteRoot; // DOCUMENT TITLE
