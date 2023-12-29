@@ -1,7 +1,8 @@
 export default {
-  siteName: "TriggercellDesigns",
-  siteRoot: " | TriggercellDesigns",
-  siteCaption: "Hand-crafted with love & care ❤️",
+  brandName: "TriggercellDesigns",
+  brandRoot: " | TriggercellDesigns",
+  brandCaption: "Hand-crafted with love & care ❤️",
+  brandVersion: '4.1.0', //231227
 
   roleDescription: "I am a Senior UX UI Product Engineer and architect of amazing user experiences!",
 

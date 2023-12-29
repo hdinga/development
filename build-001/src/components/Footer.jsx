@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="container-fluid">
       <div className="row">
         <div className="col-12 col-sm-6 text-md-left text-center py-2">
-          { "© "+vars.currentYear+" "+vars.siteName }
+          { "© "+vars.currentYear+" "+vars.brandName }
         </div>
         <div className="col-12 col-sm-6 text-md-right text-center py-2">
           <a href={'mailto:'+vars.email}>{vars.email}</a>

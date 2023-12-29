@@ -77,7 +77,7 @@ export const ContentLoadFX = (obj, trigger) => {
       start: 'top 75%', //start pos - val1: element-y, val2: viewport-y
       end: '+=5%',
       //markers: true, //dev mode
-      toggleActions: 'restart none none reverse', //enter -v, leave -vv, enterback -^, leaveback -^^
+      toggleActions: 'restart none none reverse', //enter -v, leave -vv, enterback -^, leaveback -^^ animation fn
     },
   });
 }

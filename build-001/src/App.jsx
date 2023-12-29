@@ -28,7 +28,7 @@ export default function App() {
     "border-radius: 0rem 0.25rem 0.25rem 0rem"
   ].join(';');
 
-  console.log('%c© '+vars.siteName+' '+vars.currentYear+'%c—  '+vars.siteCaption, consoleStyle1, consoleStyle2); // initialize console message
+  console.log('%c© '+vars.brandName+' '+vars.brandVersion+'%c—  '+vars.brandCaption, consoleStyle1, consoleStyle2); // initialize console message
 
   return (
     <>

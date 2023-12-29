@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 //
 import NavigationBar from "../components/NavigationBar";
-import HeroHome from "../components/HeroHome";
+import Masthead from "../components/Masthead";
 import Footer from "../components/Footer";
 import vars from "../components/_globalvars";
 import icons from "../components/_icons";
@@ -9,6 +9,7 @@ import { ScrollToTop } from "../components/_interactions";
 import { PageClickScroll } from "../components/_interactions";
 import { ContentLoadFX } from "../components/_behaviors";
 
+//
 export default function Home() {
   const componentName = "Home";
 
@@ -113,15 +114,17 @@ export default function Home() {
     ContentLoadFX('.client-tile', '.section-clients'); // page content load animation (clients)
   })
 
-  document.title = componentName+vars.siteRoot; // DOCUMENT TITLE
+  document.title = componentName+vars.brandRoot; // DOCUMENT TITLE
 
   return (
     <>
       <NavigationBar />
-      <HeroHome onClick={ PageClickScroll } />
+
       <button className="btn tc-icon icn-arrowup" title="Scroll up">
         { icons.icn_arrowup }
       </button>
+
+      <Masthead onClick={ PageClickScroll } />
 
       <section className="section-projects">
         <div className="container-fluid">

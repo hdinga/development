@@ -14,7 +14,7 @@ export default function Preloader () {
     <>
     <div className="preloader">
       <div className="loader">{ icons.icn_loader }</div>
-      <div className="loader-caption">{ vars.siteCaption }</div>
+      <div className="loader-caption">{ vars.brandCaption }</div>
     </div>
     </>
   )
