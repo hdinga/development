@@ -4,10 +4,9 @@ import NavigationBar from "../components/NavigationBar";
 import Masthead from "../components/Masthead";
 import Footer from "../components/Footer";
 import vars from "../components/_globalvars";
-import icons from "../components/_icons";
-import { ScrollToTop } from "../components/_interactions";
 import { PageClickScroll } from "../components/_interactions";
 import { ContentLoadFX } from "../components/_behaviors";
+import { BtnScrollUp } from "../components/_components";
 
 //
 export default function Home() {
@@ -108,7 +107,6 @@ export default function Home() {
   ));
 
   useEffect(() => {
-    ScrollToTop(); // click arrowup func
     ContentLoadFX('.gallery-tile', '.section-projects'); // page content load animation (project)
     ContentLoadFX('.skill-tile', '.section-expertise'); // page content load animation (skill)
     ContentLoadFX('.client-tile', '.section-clients'); // page content load animation (clients)
@@ -120,15 +118,13 @@ export default function Home() {
     <>
       <NavigationBar />
 
-      <button className="btn tc-icon icn-arrowup" title="Scroll up">
-        { icons.icn_arrowup }
-      </button>
+      <BtnScrollUp />
 
       <Masthead onClick={ PageClickScroll } />
 
       <section className="section-projects">
         <div className="container-fluid">
-          <div className="row pb-5">
+          <div className="row mb-5">
             <div className="col-12">
               <h2 className="section-label">Case studies</h2>
             </div>

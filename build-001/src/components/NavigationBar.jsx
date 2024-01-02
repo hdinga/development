@@ -10,10 +10,10 @@ export default function NavigationBar() {
 
   // nav items
   const arrNavItems = [
-    {id: 1, name: "Home", url: "/home", class: "nav-active", target: "self"},
+    {id: 1, name: "Home", url: "/home", class: "nav-active", target: "_self"},
     {id: 2, name: "Resumé", url: "./src/assets/hd-resume.pdf", class: "", target: "_blank"},
-    {id: 3, name: "About", url: "/about", class: "", target: "self"},
-    {id: 4, name: "Shop", url: "#", class: "disabled", target: "self"},
+    {id: 3, name: "About", url: "/about", class: "", target: "_self"},
+    {id: 4, name: "Shop", url: "#", class: "disabled", target: "_self"},
   ];
 
   // social links
@@ -57,7 +57,7 @@ export default function NavigationBar() {
     <header>
       <nav>
         <div className="nav-header">
-          <a href="/home.html" className="nav-header-logo" alt="Triggercell Portfolio">{icons.icn_logobrand}</a>
+          <a href="/home" className="nav-header-logo" alt="Triggercell Portfolio">{icons.icn_logobrand}</a>
           <button type="button" className="btn ml-auto" title="Menu" onClick={fnMenuState}>
             {icons.icn_menu}
           </button>
@@ -71,7 +71,7 @@ export default function NavigationBar() {
             <div className="nav-contact">
               <span className="section-label">Let's get in touch</span>
               <div>
-                <a href={'mailto:'+vars.email} className="email-link">{vars.email}</a>
+                <a href={'mailto:'+vars.brandEmail} className="email-link">{vars.brandEmail}</a>
               </div>
               <div className="mt-2">{ listSocialLinks }</div>
             </div>

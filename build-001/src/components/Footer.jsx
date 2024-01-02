@@ -10,7 +10,7 @@ export default function Footer() {
           { "© "+vars.currentYear+" "+vars.brandName }
         </div>
         <div className="col-12 col-sm-6 text-md-right text-center py-2">
-          <a href={'mailto:'+vars.email}>{vars.email}</a>
+          <a href={'mailto:'+vars.brandEmail}>{vars.brandEmail}</a>
         </div>
       </div>
     </footer>
