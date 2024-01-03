@@ -15,8 +15,8 @@ export const PageClickScroll = () => {
 //-- HEADER MOUSE PARALLAX --
 export const HeaderMouseFX = () => {
   // defined mouse area
-  document.querySelector('.section-masthead').addEventListener("mousemove", mouseMoveFunc);
-  document.querySelector('.section-masthead').addEventListener("mouseleave", mouseleaveFunc);
+  document.querySelector('.masthead-content').addEventListener("mousemove", mouseMoveFunc);
+  document.querySelector('.masthead-content').addEventListener("mouseleave", mouseleaveFunc);
 
   // mouse-move function
   function mouseMoveFunc(e) {

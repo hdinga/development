@@ -13,16 +13,16 @@ export default function About() {
 
   // ARRAY: LOGOS
   const logos = [
-    { id: 1, title: 'Triggercell logo', desc: 'Original logo', src: '../src/assets/tc-logo-1b.png', year: '2004', },
-    { id: 2, title: 'Triggercell logo', desc: 'Redesigned for simplicity', src: '../src/assets/tc-logo-1c.png', year: '2010', },
-    { id: 3, title: 'Triggercell logo', desc: 'Redesigned for representation', src: '../src/assets/tc-logo-2a.png', year: '2019', },
-    { id: 4, title: 'Triggercell logo', desc: 'Redesigned for modernity', src: '../src/assets/tc-logo-2b.png', year: '2024', },
+    { id: 1, title: 'Triggercell logo', desc: 'Original logo', src: '1b', year: '2004', },
+    { id: 2, title: 'Triggercell logo', desc: 'Redesigned for simplicity', src: '1c', year: '2010', },
+    { id: 3, title: 'Triggercell logo', desc: 'Redesigned for representation', src: '2a', year: '2019', },
+    { id: 4, title: 'Triggercell logo', desc: 'Redesigned for modernity', src: '2b', year: '2024', },
   ];
 
   // COMPONENT: SKILL
   const listLogos = logos.map((logo) => (
     <figure key={ logo.id } className="col-lg-3 col-md-6">
-      <img src={ logo.src } className="img-fluid" alt={ logo.title }/>
+      <img src={ './src/assets/tc-logo-'+logo.src+'.png' } className="img-fluid" alt={ logo.title }/>
       <figcaption className="figure-caption text-center">{ logo.year }</figcaption>
       <p className="mt-4 text-center small">{ logo.desc }</p>
     </figure>

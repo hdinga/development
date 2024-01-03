@@ -80,6 +80,7 @@
   bottom: 3rem;
   left: 50%;
   animation: var(--tc-anim-fadedown);
+  z-index: 30;
 
   &:hover {
     cursor:pointer;
@@ -203,6 +204,7 @@ nav {
 section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  z-index: 20;
 }
 
 /***--------------------------------------------------------------------------------// MASTHEAD **/
@@ -215,10 +217,15 @@ section {
   padding: 5rem;
   text-align: center;
   color: #FFF;
+  background-color: var(--tc-color-blue-dk);
   overflow: hidden;
-  background: url("../assets/bground/tc-hero-bground2.jpg") no-repeat center;
-  background-size: cover;
-  //z-index: 20;
+
+  .masthead-content { z-index: 30; }
+
+  .masthead-bground {
+    position: absolute;
+    z-index: 1;
+  }
 
   .masthead-header {
     font-size: 3rem;
