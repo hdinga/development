@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import vars from "../components/_globalvars";
 //import icons from "../components/_icons";
 import { BtnScrollUp } from "../components/_components";
-import { PageClickScroll } from "../components/_interactions";
 //
 
 export default function About() {
@@ -42,7 +41,7 @@ export default function About() {
 
       <BtnScrollUp />
 
-      <Masthead onClick={ PageClickScroll } />
+      <Masthead />
 
       <section className="section-about">
         <div className="container section-offset-y">

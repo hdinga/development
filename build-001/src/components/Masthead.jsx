@@ -1,26 +1,21 @@
-import icons from "./_icons";
-import { HeaderMouseFX } from "./_interactions";
-import { Typewriter } from "./_behaviors";
-
 import { useEffect } from "react";
+//
+import icons from "./_icons";
+//
 
-export default function HeroHome ({onClick}) {
+export default function Masthead () {
 
   useEffect(() => {
-    Typewriter();
-    HeaderMouseFX();
+    //
   });
 
   return (
     <>
     <section className="section-masthead">
+      <div className="icn-mouse" title="Scroll down">{icons.icn_mouse}</div>
       <div className="masthead-content">
-        <h3 className="masthead-header">
-          I am <span className="masthead-title"></span>
-        </h3>
-        <p>I am a Senior UX UI Product Engineer and architect of amazing user experiences!</p>
+        <img src="" />
       </div>
-      <div className="icn-mouse" title="Scroll down" onClick={onClick}>{icons.icn_mouse}</div>
     </section>
     </>
   )

@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 //
 import NavigationBar from "../components/NavigationBar";
-import Masthead from "../components/Masthead";
+import MastheadHome from "../components/MastheadHome";
 import Footer from "../components/Footer";
 import vars from "../components/_globalvars";
-import { PageClickScroll } from "../components/_interactions";
 import { ContentLoadFX } from "../components/_behaviors";
 import { BtnScrollUp } from "../components/_components";
 
@@ -120,7 +119,7 @@ export default function Home() {
 
       <BtnScrollUp />
 
-      <Masthead onClick={ PageClickScroll } />
+      <MastheadHome />
 
       <section className="section-projects">
         <div className="container-fluid">

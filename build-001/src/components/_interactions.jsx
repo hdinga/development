@@ -3,11 +3,13 @@ import { ScrollToPlugin } from "gsap/all";
 
 gsap.registerPlugin(ScrollToPlugin);
 
-const gsEase = 'circ.out';
+const gsEase = 'power1';
 
 //-- PAGE SCROLL CLICK --
 export const PageClickScroll = () => {
-  gsap.to(window, { duration: 1, scrollTo: '.section-projects', ease: gsEase });
+  document.querySelector('.icn-mouse').addEventListener('click', () => {
+    gsap.to(window, { duration:1, scrollTo: '.section-projects', ease: gsEase });
+  });
 }
 
 //-- HEADER MOUSE PARALLAX --
