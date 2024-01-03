@@ -159,7 +159,11 @@ nav {
     padding: 0.5rem;
     text-align: center;
     font-size: var(--tc-text-lg);
-    
+
+    &.active a {
+      color: var(--tc-color-red-md);
+      pointer-events: none;
+    }
   }
 
   a {
@@ -169,11 +173,6 @@ nav {
     &:hover { 
       color: var(--tc-color-red-md); 
       transition: var(--tc-anim-transition);
-    }
-
-    &.nav-active {
-      color: var(--tc-color-red-md);
-      pointer-events: none;
     }
   }
 }
@@ -368,14 +367,10 @@ section {
   }
 
   .about-brand-img {
-    //display: block;
     width: 300px;
-    //height: 300px;
-    
+    height: auto;
     margin: auto;
-    content: url('../assets/tc-logo-1a.jpg');
-    //background-size: cover;
-    //background-image: url('../assets/img-logo-1d.png');
+    content: url('../assets/tc-logo-2a.png');
   }
 
   blockquote {

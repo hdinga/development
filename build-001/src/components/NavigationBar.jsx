@@ -1,19 +1,22 @@
 import { useState } from "react";
+//
 import gsap from "gsap";
 import vars from "./_globalvars";
 import icons from "./_icons";
+//
 
 export default function NavigationBar() {
 
+  let currPathname = window.location.pathname; // get current url pathname
   const colorcode = getComputedStyle(document.body); // get color value from document
   const [isActive, setIsActive] = useState(false); // nav menu state
 
   // nav items
   const arrNavItems = [
-    {id: 1, name: "Home", url: "/home", class: "nav-active", target: "_self"},
+    {id: 1, name: "Home", url: "/home", class: '', target: "_self"},
     {id: 2, name: "Resumé", url: "./src/assets/hd-resume.pdf", class: "", target: "_blank"},
-    {id: 3, name: "About", url: "/about", class: "", target: "_self"},
-    {id: 4, name: "Shop", url: "#", class: "disabled", target: "_self"},
+    {id: 3, name: "About", url: "/about", class: '', target: "_self"},
+    {id: 4, name: "Shop", url: "#", class: 'disabled', target: "_self"},
   ];
 
   // social links
@@ -25,8 +28,8 @@ export default function NavigationBar() {
   ];
 
   const listNavItems = arrNavItems.map((navitem) =>
-    <li key={navitem.id} className="nav-item">
-      <a className={navitem.class} href={navitem.url} target={navitem.target}>{navitem.name}</a>
+    <li key={navitem.id} className={'nav-item'+(navitem.class ? ' '+navitem.class:'')+(navitem.url === currPathname ? ' '+'active':'')}>
+      <a href={navitem.url} target={ navitem.target }>{ navitem.name }</a>
     </li>
   )
 
@@ -50,7 +53,7 @@ export default function NavigationBar() {
       gsap.to('#icn_menu .icn-fground1', { rotation: -45, transformOrigin:"80% 100%", ease: 'circ.Out'});
       gsap.to('#icn_menu .icn-fground2', { rotation: 45, transformOrigin:"80% 0%",  ease: 'circ.Out'});
     }
-  }
+  } 
 
   return (
     <>
