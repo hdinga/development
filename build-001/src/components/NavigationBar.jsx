@@ -1,8 +1,9 @@
 import { useState } from "react";
 //
 import gsap from "gsap";
-import vars from "./_globalvars";
 import icons from "./_icons";
+import { EmailContact } from "./_components";
+import { SocialLinks } from "./_components";
 //
 
 export default function NavigationBar() {
@@ -19,24 +20,10 @@ export default function NavigationBar() {
     {id: 4, name: "Shop", url: "#", class: 'disabled', target: "_self"},
   ];
 
-  // social links
-  const arrSocialLinks = [
-    {id: 1, name: "LinkedIn", icon: (icons.icn_linkedin), url: "https://linkedin.com/in/hdinga"},
-    {id: 2, name: "Behance", icon: (icons.icn_behance), url: "https://www.behance.net/triggercell"},
-    {id: 3, name: "Github", icon: (icons.icn_github), url: "https://github.com/hdinga"},
-    {id: 4, name: "Instagram", icon: (icons.icn_instagram), url: "https://www.instagram.com/triggercell"},
-  ];
-
   const listNavItems = arrNavItems.map((navitem) =>
     <li key={navitem.id} className={'nav-item'+(navitem.class ? ' '+navitem.class:'')+(navitem.url === currPathname ? ' '+'active':'')}>
       <a href={navitem.url} target={ navitem.target }>{ navitem.name }</a>
     </li>
-  )
-
-  const listSocialLinks = arrSocialLinks.map((sociallink) =>
-    <a key={sociallink.id} href={sociallink.url} title={sociallink.name} className="icn-social" target="_blank">
-      {sociallink.icon}
-    </a>
   )
 
   // MENU OPEN/CLOSE FUNCTION
@@ -67,16 +54,14 @@ export default function NavigationBar() {
         </div>
         <div className={'nav-menu-container'+(isActive ? ' active' : '')}>
           <div className="nav-menu">
-            <div className="section-label">Menu</div>
-            <ul role="navigation">
-              { listNavItems }
-            </ul>
+            <div className="mt-5">
+              <div className="section-label">Menu</div>
+              <ul role="navigation">{ listNavItems }</ul>
+            </div>
             <div className="nav-contact">
-              <span className="section-label">Let's get in touch</span>
-              <div>
-                <a href={'mailto:'+vars.brandEmail} className="email-link">{vars.brandEmail}</a>
-              </div>
-              <div className="mt-2">{ listSocialLinks }</div>
+              <span className="section-label">Contact</span>
+              <EmailContact />
+              <div className="mt-3"><SocialLinks/></div>
             </div>
           </div>
         </div>
