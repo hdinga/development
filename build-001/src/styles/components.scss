@@ -54,7 +54,7 @@
 
 .icn-arrowup {
   position: fixed;
-  bottom: calc((var(--tc-nav-height)) + (var(--tc-nav-height))/4);
+  bottom: calc((var(--tc-nav-height))*1.75);
   right: 0;
   opacity: 0;
   z-index: 30;
@@ -66,7 +66,7 @@
 
 .icn-social {
   display: inline-block;
-  margin: 0.75rem;
+  margin: 0 0.5rem;
 
   &:hover > svg .icn-fground { fill: var(--tc-color-red-md); }
   &:hover > svg { 
@@ -130,27 +130,32 @@ nav {
   }
 
   .nav-menu-container {
-    display: flex;
     position: fixed;
     top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    padding: 10vh 6.944vw;
     color: #FFF;
     background-color: var(--tc-color-grey-dk);
+    overflow: hidden;
     z-index: 41;
   }
 
   .nav-menu {
-    margin: auto 0;
-    justify-content: center;
     width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    position: relative;
+    z-index: 2;
   }
 
   .nav-contact {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .nav-item {
@@ -185,6 +190,7 @@ nav {
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
+  color: var(--tc-color-grey-md);
 
   &::after {
     content: "/";
@@ -196,7 +202,9 @@ nav {
 
 .email-link {
   cursor: pointer;
-  color: var(--tc-color-beige-md);
+  font-size: var(--tc-text-sm);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 
@@ -392,4 +400,19 @@ footer {
   color: #FFF;
   padding: 0.5rem 0;
   background-color: var(--tc-color-grey-dk);
+
+  .footer-col {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: auto 0;
+  }
+
+  .email-link { margin-left: 0.5rem;}
+
+  a svg {
+    width: 20px;
+    height: auto;
+  }
 }
