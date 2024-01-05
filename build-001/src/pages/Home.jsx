@@ -121,40 +121,42 @@ export default function Home() {
 
       <MastheadHome />
 
-      <section className="section-projects">
-        <div className="container-fluid">
-          <div className="row mb-5">
-            <div className="col-12">
-              <h2 className="section-label">Case studies</h2>
+      <div className="page-content">
+        <section className="section-projects">
+          <div className="container-fluid">
+            <div className="row mb-5">
+              <div className="col-12">
+                <h2 className="section-label">Case studies</h2>
+              </div>
+            </div>
+            <div className="row">
+              { listProjects }
             </div>
           </div>
-          <div className="row">
-            { listProjects }
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="section-expertise">
-        <div className="container">
-          <div className="row pb-5">
-            <div className="col-12">
-              <h2 className="section-label">Expertise</h2>
+        <section className="section-expertise">
+          <div className="container">
+            <div className="row pb-5">
+              <div className="col-12">
+                <h2 className="section-label">Expertise</h2>
+              </div>
             </div>
+            <div className="row mx-5 no-gutter">{ listSkills }</div>
           </div>
-          <div className="row mx-5 no-gutter">{ listSkills }</div>
-        </div>
-      </section>
+        </section>
 
-      <section className="section-clients">
-        <div className="container">
-          <div className="row pb-5">
-            <div className="col-12">
-              <h2 className="section-label">Client network</h2>
+        <section className="section-clients">
+          <div className="container">
+            <div className="row pb-5">
+              <div className="col-12">
+                <h2 className="section-label">Client network</h2>
+              </div>
             </div>
+            <div className="row mx-5 justify-content-center">{ listClients }</div>
           </div>
-          <div className="row mx-5 justify-content-center">{ listClients }</div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <Footer />
     </>

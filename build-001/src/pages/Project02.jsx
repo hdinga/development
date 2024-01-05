@@ -4,18 +4,15 @@ import vars from "../components/_globalvars";
 import { BaseLayout } from "../components/_components";
 //
 
-export default function ProjectNotehubAlerts() {
+export default function Project02() {
   const componentName = "Notehub Alerts"; //COMPONENT NAME
 
   const SectionContent = () => {
-    return (
-      <div className="page-content">
-        <section className="">
-          <h1 className="mb-3">Notehub Alerts & Notifications</h1>
-          Hello world! this sctuslly orking
-        </section>
-      </div>
-    )
+    <div className="page-content">
+      <section className="">
+        Hello world!
+      </section>
+    </div>
   }
 
   useEffect(() => {
