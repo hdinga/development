@@ -87,6 +87,20 @@
   }
 }
 
+.stickynote {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+  font-size: var(--tc-text-sm);
+  box-shadow: var(--tc-box-shadow);
+  color: #856404;
+  background-color: #FFF3cd;
+  border: 1px solid #FFEEBA;
+  border-radius: 0.25rem;
+}
+
 // PAGE
 .page-wrapper {
   display: block;
@@ -263,7 +277,6 @@ section {
   position: relative;
   align-items: center;
   background-color: var(--tc-color-grey-xl);
-  //z-index: 21;
 
   .gallery-tile {
     position: relative;
@@ -309,6 +322,17 @@ section {
     .gallery-caption h6 {
       font-weight: bold;
     }
+  }
+}
+
+/***--------------------------------------------------------------------------------// PROJECT **/
+.section-project {
+
+  h1 { color: var(--tc-color-grey-dk);}
+  .card {
+    margin-bottom: 3rem;
+    font-size: var(--tc-text-sm);
+    background-color: var(--tc-color-grey-lt);
   }
 }
 
