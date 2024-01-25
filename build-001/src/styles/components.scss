@@ -334,6 +334,44 @@ section {
     font-size: var(--tc-text-sm);
     background-color: var(--tc-color-grey-lt);
   }
+
+  .project-card {
+    .img-fluid {
+      margin: 0.5rem 0;
+      line-height: 1;
+    }
+    .figure-caption {
+      font-size: 0.8rem;
+    }
+  }
+
+  #modalPreview {
+    #btnCloseModal {
+      position: absolute;
+      top: 0;
+      right: 0.2rem;
+      width: 3rem;
+      height: 3rem;
+      margin: 0.5rem;
+      cursor: pointer;
+
+      .icn-bground { fill: none; }
+    }
+
+    .modal-content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,0%);
+      background: transparent;
+      border: 0;
+      z-index: 51;
+    }
+
+    .modal-backdrop {
+      opacity: 0.5;
+      z-index: 50;
+    }
+  }
 }
 
 /***--------------------------------------------------------------------------------// EXPERTISE **/
@@ -342,7 +380,6 @@ section {
   position: relative;
   align-items: center;
   background-color: var(--tc-color-grey-xl);
-  //z-index: 22;
 }
 
 /***--------------------------------------------------------------------------------// CLIENTS **/
