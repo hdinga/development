@@ -8,7 +8,7 @@ const gsEase = 'power1';
 //-- PAGE SCROLL CLICK --
 export const PageClickScroll = () => {
   document.querySelector('.icn-mouse').addEventListener('click', () => {
-    gsap.to(window, { duration:1, scrollTo: '.page-content', ease: gsEase });
+    gsap.to(window, { duration:1, scrollTo: '.scroll-anchor', ease: gsEase });
   });
 }
 

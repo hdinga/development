@@ -8,11 +8,9 @@ export default function Project02() {
   const componentName = "Notehub Alerts"; //COMPONENT NAME
 
   const SectionContent = () => {
-    <div className="page-content">
-      <section className="">
-        Hello world!
-      </section>
-    </div>
+    <section className="scroll-anchor">
+      Hello world!
+    </section>
   }
 
   useEffect(() => {

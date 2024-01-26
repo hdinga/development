@@ -121,8 +121,7 @@ export default function Home() {
 
       <MastheadHome />
 
-      <div className="page-content">
-        <section className="section-projects">
+        <section className="section-projects scroll-anchor">
           <div className="container-fluid">
             <div className="row mb-5">
               <div className="col-12">
@@ -156,7 +155,6 @@ export default function Home() {
             <div className="row mx-5 justify-content-center">{ listClients }</div>
           </div>
         </section>
-      </div>
 
       <Footer />
     </>

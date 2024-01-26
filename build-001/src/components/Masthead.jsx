@@ -4,7 +4,7 @@ import icons from "./_icons";
 import { PageClickScroll } from "../components/_interactions";
 //
 
-export default function Masthead ({ bground}) {
+export default function Masthead ({ bground }) {
 
   useEffect(() => {
     PageClickScroll();
@@ -13,10 +13,10 @@ export default function Masthead ({ bground}) {
   return (
     <>
     <section className="section-masthead">
-      <div className="icn-mouse" title="Scroll down">{icons.icn_mouse}</div>
+      <div className="icn-mouse" title="Scroll down">{ icons.icn_mouse }</div>
       <div className="masthead-content"></div>
-      <div className="masthead-bground">
-        <img src={ './src/assets/bground/'+bground+'.jpg'} className="" alt="" />
+      <div className="masthead-wrapper">
+        <div className={ 'mh '+bground }></div>
       </div>
     </section>
     </>

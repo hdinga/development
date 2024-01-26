@@ -24,8 +24,8 @@ export default function MastheadHome () {
         </h3>
         <p>I am a Senior UX UI Product Engineer and architect of amazing user experiences!</p>
       </div>
-      <div className="masthead-bground">
-        <img className="" src="./src/assets/bground/bg-home.jpg" alt="" />
+      <div className="masthead-wrapper">
+        <div className="mh bg-home0"></div>
       </div>
     </section>
     </>
