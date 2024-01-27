@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/all";
-
+//
 gsap.registerPlugin(ScrollToPlugin);
 
 const gsEase = 'power1';
@@ -8,7 +8,7 @@ const gsEase = 'power1';
 //-- PAGE SCROLL CLICK --
 export const PageClickScroll = () => {
   document.querySelector('.icn-mouse').addEventListener('click', () => {
-    gsap.to(window, { duration:1, scrollTo: '.section-projects', ease: gsEase });
+    gsap.to(window, { duration:1, scrollTo: '.scroll-anchor', ease: gsEase });
   });
 }
 
@@ -68,6 +68,32 @@ export const ScrollToTop = () => {
       }
     }
   })
+}
+
+//-- [MODAL IMAGE PREVIEW, FUNC] --
+export const OpenModalPreview = () => {
+  const arrProjectCard = document.querySelectorAll('.project-card .img-fluid');
+  const modalPreview = document.querySelector('#modalPreview');
+  const modalPreviewImg = document.querySelector('#modalPreview .img-fluid');
+
+  // add listeners for each image instance
+  Array.from(arrProjectCard).forEach(card => {
+    card.addEventListener('click', function(event) {
+      modalPreviewImg.setAttribute('src', card.getAttribute('src')); //set src to modal preview
+        modalPreview.style.display = 'block';
+        gsap.fromTo(modalPreview, { opacity: 0, scale: 1.10}, {opacity: 1, scale: 1, duration: 0.25, ease: "circ.out"}); //show modal
+      event.preventDefault();
+    });
+  });
+
+  // closes image modal on click
+  function CloseModal() {
+    gsap.to(modalPreview, { x: 0, y: 0, opacity:0, ease: "circ.out", onComplete: () => { modalPreview.style.display = 'none'; }}); //hide modal
+  }
+
+  // adds listener to close modal to button & backdrop
+  document.querySelector('#btnCloseModal').addEventListener('click', () => { CloseModal(); });
+  document.querySelector('.modal-backdrop').addEventListener('click', () => { CloseModal(); });
 }
 
 //-- [BEHAVIOR] NEW --

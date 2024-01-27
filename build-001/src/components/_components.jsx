@@ -3,11 +3,14 @@ import { useEffect } from "react";
 //
 import icons from "../components/_icons";
 import vars from "./_globalvars";
+import NavigationBar from "../components/NavigationBar";
+import Masthead from "../components/Masthead";
+import Footer from "../components/Footer";
 import { ScrollToTop } from "../components/_interactions";
 //
 
 //-- [COMPONENT] NEW --
-export const BtnScrollUp = () => {
+export const BtnScrollUp = () => { // TODO: COMBINE COMPONENT & FUNCNALITY TOGETHER ^
 
   useEffect(() => {
     ScrollToTop(); // click arrowup func
@@ -48,6 +51,24 @@ export const SocialLinks = () => {
 
   return (
     <>{ listSocialLinks }</>
+  )
+}
+
+//-- [COMPONENT] BASELAYOUT --
+export const BaseLayout = ({ bground, content }) => {
+
+  return (
+    <>
+      <NavigationBar />
+
+      <Masthead bground={ bground }/>
+
+      { content }
+
+      <BtnScrollUp />
+
+      <Footer />
+    </>
   )
 }
 

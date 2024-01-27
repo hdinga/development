@@ -1,15 +1,11 @@
 import { useEffect } from "react";
 //
-import NavigationBar from "../components/NavigationBar";
-import Masthead from "../components/Masthead";
-import Footer from "../components/Footer";
 import vars from "../components/_globalvars";
-//import icons from "../components/_icons";
-import { BtnScrollUp } from "../components/_components";
+import { BaseLayout } from "../components/_components";
 //
 
 export default function About() {
-  const componentName = "About";
+  const componentName = "About"; //COMPONENT NAME
 
   // ARRAY: LOGOS
   const logos = [
@@ -28,22 +24,9 @@ export default function About() {
     </figure>
   ));
 
-  useEffect(() => {
-    //
-  })
-
-  document.title = componentName+vars.brandRoot; // DOCUMENT TITLE
-
-  return (
-    <>
-
-      <NavigationBar />
-
-      <BtnScrollUp />
-
-      <Masthead />
-
-      <section className="section-about">
+  const SectionContent = () => {
+    return (
+      <section className="section-about scroll-anchor">
         <div className="container section-offset-y">
 
           <div className="row about-wrapper">
@@ -92,8 +75,18 @@ export default function About() {
           </div>
         </div>
       </section>
+    )
+  }
 
-      <Footer />
+  useEffect(() => {
+    //
+  });
+
+  document.title = componentName+vars.brandRoot; // DOCUMENT TITLE
+
+  return (
+    <>
+      <BaseLayout bground={'bg-about0'} content={ <SectionContent />} />
     </>
   );
 }
